@@ -16,18 +16,3 @@
 .root{
     -fx-background-color: slategrey;
 }
-
-.menu-bar{
-    -fx-background-color: derive(#778890, -30%);
-}
-
-.menu-item{
-    -fx-background-color: derive(#778899, -30%);
-}
-
-.menu-button{
--fx-background-color: lightsteelblue;
-    -fx-background-radius: 18px;
-    -fx-font-size: 10pt;
-    -fx-font-family: "Lato bold" "Calibri"
-}

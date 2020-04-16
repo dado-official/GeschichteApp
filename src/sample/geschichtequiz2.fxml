@@ -28,14 +28,9 @@
       <center>
         <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="200.0">
           <children>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Aktuelles Thema" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Quiz mit den letzten Fehlern" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-            <MenuButton alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Thema auswählen" GridPane.columnIndex="0" GridPane.rowIndex="2">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
-              </items>
-            </MenuButton>
+            <Button fx:id="neuesthema" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="200.0" text="Aktuelles Thema" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Button fx:id="letztefehler" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="200.0" text="Quiz mit den letzten Fehlern" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Button fx:id="allethemen" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="200.0" text="Quiz zu allen Themen" GridPane.columnIndex="0" GridPane.rowIndex="2" />
           </children>
           <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

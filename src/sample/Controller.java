@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -31,7 +32,7 @@ public class Controller {
 
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
-            stage2.setTitle("Neues Quiz");
+            stage2.initStyle(StageStyle.UNDECORATED);
             Pane root = fxmlloader.load(getClass().getResource("quit.fxml").openStream());
             Scene scene = new Scene(root, 400, 600);
             stage2.setScene(scene);
@@ -44,7 +45,7 @@ public class Controller {
 
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
-            stage2.setTitle("Neues Quiz");
+            stage2.initStyle(StageStyle.UNDECORATED);
             Pane root = fxmlloader.load(getClass().getResource("geschichtequiz2.fxml").openStream());
             Scene scene = new Scene(root, 400, 600);
             stage2.setScene(scene);
@@ -58,7 +59,7 @@ public class Controller {
 
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
-            stage2.setTitle("Alte Quiz");
+            stage2.initStyle(StageStyle.UNDECORATED);
             Pane root = fxmlloader.load(getClass().getResource("geschichtequiz3.fxml").openStream());
             Scene scene = new Scene(root, 400, 600);
             stage2.setScene(scene);
