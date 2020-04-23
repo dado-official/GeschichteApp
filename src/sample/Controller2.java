@@ -6,6 +6,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -20,11 +22,13 @@ public class Controller2 {
     @FXML
     private Button zuruck;
     @FXML
-    private Button neuesthema;
+    private Button aktuellthema;
     @FXML
     private Button letztefehler;
     @FXML
-    private Button allethemen;
+    private MenuButton bestthemen;
+    @FXML
+    private MenuItem balkankriege;
 
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
@@ -41,8 +45,8 @@ public class Controller2 {
             stage2.setResizable(false);
             stage2.show();
             stage1.close();
-        } else if(event.getSource() == neuesthema){
-            Stage stage1 = (Stage) neuesthema.getScene().getWindow();
+        } else if(event.getSource() == aktuellthema){
+            Stage stage1 = (Stage) aktuellthema.getScene().getWindow();
 
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
@@ -55,15 +59,7 @@ public class Controller2 {
             stage2.show();
             stage1.close();
 
-            //Die Themenbereiche werden in topicList gespeichert
-            File f = new File("Themenbereiche");
-            String[] topicList = f.list();
 
-            // Hier bitte UI einfügen welches dem User ermöglicht sich ein topic aus topicList auszusuchen dieses
-            // soll in die Variable chosenTopic gespeichert werden
-
-            String chosenTopic;
-            FileHandler fileHandler = new FileHandler(chosenTopic);
 
         } else if(event.getSource() == letztefehler){
             Stage stage1 = (Stage) letztefehler.getScene().getWindow();
@@ -78,8 +74,25 @@ public class Controller2 {
             stage2.setResizable(false);
             stage2.show();
             stage1.close();
-        } else if(event.getSource() == allethemen){
-            Stage stage1 = (Stage) allethemen.getScene().getWindow();
+        }
+
+
+    }
+
+    public void handleItemAction(ActionEvent actionEvent) throws IOException {
+        MenuItem clickedMenuItem = (MenuItem) actionEvent.getTarget();
+        String buttonlabel = clickedMenuItem.getText();
+        System.out.println(buttonlabel);
+            //Die Themenbereiche werden in topicList gespeichert
+            File f = new File("Themenbereiche");
+            String[] topicList = f.list();
+
+            // Hier bitte UI einfügen welches dem User ermöglicht sich ein topic aus topicList auszusuchen dieses
+            // soll in die Variable chosenTopic gespeichert werden
+
+            String chosenTopic = buttonlabel;
+            FileHandler fileHandler = new FileHandler(chosenTopic + ".txt");
+             Stage stage1 = (Stage) aktuellthema.getScene().getWindow();
 
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
@@ -91,6 +104,6 @@ public class Controller2 {
             stage2.setResizable(false);
             stage2.show();
             stage1.close();
-        }
     }
 }
+
