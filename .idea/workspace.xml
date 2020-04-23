@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Hinzufügen der Klasse Question">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Änderung bei der Auswahl eines bestimmten Themas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Themenbereiche/Balkankriege_quiztest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/Balkankriege.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/META-INF/geschichtequiz.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Themenbereiche/Steinzeit_quiztest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/Steinzeit.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/geschichtequiz2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/geschichtequiz2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/style2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/geschichtequiz2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/geschichtequiz2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/style2.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587464971055</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Änderung bei der Auswahl eines bestimmten Themas">
+      <created>1587655615555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587655615555</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -251,6 +254,8 @@
     <MESSAGE value="Hinzufügen der Klasse FileHandler" />
     <MESSAGE value="In Klasse FileHandler&#10;ersetzen der Klasse main" />
     <MESSAGE value="In Klasse FileHandler:&#10;ersetzen der Klasse main durch init und hinzufügen eines constructors" />
-    <option name="LAST_COMMIT_MESSAGE" value="In Klasse FileHandler:&#10;ersetzen der Klasse main durch init und hinzufügen eines constructors" />
+    <MESSAGE value="Änderung bei der Auswahl einem bestimmten Thema" />
+    <MESSAGE value="Änderung bei der Auswahl eines bestimmten Themas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Änderung bei der Auswahl eines bestimmten Themas" />
   </component>
 </project>
