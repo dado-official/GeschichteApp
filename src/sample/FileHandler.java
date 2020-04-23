@@ -7,7 +7,7 @@ public class FileHandler {
     public Question[] questions;
 
     FileHandler(String Filename) throws IOException {
-        this.file = new File(Filename);
+        this.file = new File("Themenbereiche/"+ Filename);
         init();
     }
 

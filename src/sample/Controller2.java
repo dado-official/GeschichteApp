@@ -10,6 +10,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.File;
 import java.io.IOException;
 
 
@@ -53,6 +54,17 @@ public class Controller2 {
             stage2.setResizable(false);
             stage2.show();
             stage1.close();
+
+            //Die Themenbereiche werden in topicList gespeichert
+            File f = new File("Themenbereiche");
+            String[] topicList = f.list();
+
+            // Hier bitte UI einfügen welches dem User ermöglicht sich ein topic aus topicList auszusuchen dieses
+            // soll in die Variable chosenTopic gespeichert werden
+
+            String chosenTopic;
+            FileHandler fileHandler = new FileHandler(chosenTopic);
+
         } else if(event.getSource() == letztefehler){
             Stage stage1 = (Stage) letztefehler.getScene().getWindow();
 
