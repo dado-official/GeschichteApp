@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -24,7 +25,11 @@ public class Quizlayout {
         //ArrayList zum Speichern der bereits angezeigten Fragen
         private ArrayList<Question> duplicate = new ArrayList<Question>();
 
-        public void randomizeQuestion (FileHandler fileHandler){
+        public void randomizeQuestion (String chosenTopic) throws IOException {
+
+                FileHandler fileHandler = new FileHandler(chosenTopic + ".txt");
+                fileHandler.init();
+
                 Random rand = new Random();
                 //Auswählen einer Zufälligen Frage
                 int rand_int1 = rand.nextInt(fileHandler.questions.length);
