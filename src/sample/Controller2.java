@@ -6,24 +6,28 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.File;
 import java.io.IOException;
-
-
+import java.util.Arrays;
 
 
 public class Controller2 {
     @FXML
     private Button zuruck;
     @FXML
-    private Button neuesthema;
+    private Button aktuellthema;
     @FXML
     private Button letztefehler;
     @FXML
-    private Button allethemen;
+    private MenuButton bestthemen;
+    @FXML
+    private MenuItem balkankriege;
 
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
@@ -40,8 +44,8 @@ public class Controller2 {
             stage2.setResizable(false);
             stage2.show();
             stage1.close();
-        } else if(event.getSource() == neuesthema){
-            Stage stage1 = (Stage) neuesthema.getScene().getWindow();
+        } else if (event.getSource() == aktuellthema) {
+            Stage stage1 = (Stage) aktuellthema.getScene().getWindow();
 
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
@@ -53,7 +57,9 @@ public class Controller2 {
             stage2.setResizable(false);
             stage2.show();
             stage1.close();
-        } else if(event.getSource() == letztefehler){
+
+
+        } else if (event.getSource() == letztefehler) {
             Stage stage1 = (Stage) letztefehler.getScene().getWindow();
 
             Stage stage2 = new Stage();
@@ -66,19 +72,38 @@ public class Controller2 {
             stage2.setResizable(false);
             stage2.show();
             stage1.close();
-        } else if(event.getSource() == allethemen){
-            Stage stage1 = (Stage) allethemen.getScene().getWindow();
+        }
 
-            Stage stage2 = new Stage();
-            FXMLLoader fxmlloader = new FXMLLoader();
-            stage2.initStyle(StageStyle.UNDECORATED);
-            Pane root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
-            Scene scene = new Scene(root, 400, 600);
-            stage2.setScene(scene);
-            scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
-            stage2.setResizable(false);
-            stage2.show();
-            stage1.close();
+
+    }
+
+    public void handleItemAction(ActionEvent actionEvent) throws IOException {
+        MenuItem clickedMenuItem = (MenuItem) actionEvent.getTarget();
+        String buttonlabel = clickedMenuItem.getText();
+        System.out.println(buttonlabel);
+        //Die Themenbereiche werden in topicList gespeichert
+        File f = new File("Themenbereiche");
+        String[] topicList = f.list();
+
+        String chosenTopic = buttonlabel;
+        FileHandler fileHandler = new FileHandler(chosenTopic + ".txt");
+
+        Stage stage1 = (Stage) aktuellthema.getScene().getWindow();
+        Stage stage2 = new Stage();
+        FXMLLoader fxmlloader = new FXMLLoader();
+        stage2.initStyle(StageStyle.UNDECORATED);
+        Pane root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
+        Scene scene = new Scene(root, 400, 600);
+        stage2.setScene(scene);
+        scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
+        stage2.setResizable(false);
+        stage2.show();
+        stage1.close();
+        System.out.println(fileHandler.getQuestions(0));
+        for(int i = 0;i<3;i++){
+            System.out.println(fileHandler.getAnswer(0, i));
         }
     }
+
 }
+

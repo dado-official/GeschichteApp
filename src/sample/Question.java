@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Arrays;
+
 //Die Klasse welche eine Frage und die dazugehörigen Antworten speichert
 public class Question {
     private String question;
@@ -21,5 +23,13 @@ public class Question {
     }
     public String getQuestion() {
         return question;
+    }
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "question='" + question + '\'' +
+                ", answers=" + Arrays.toString(answers) +
+                '}';
     }
 }

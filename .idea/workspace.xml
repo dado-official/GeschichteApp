@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Hinzufügen der Klasse Question" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Ausgabe der Antworten in der Kommandozeile zur Überprüffung">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Quizlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Quizlayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/quizlayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/quizlayout.fxml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-=======
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
->>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,17 +77,14 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1XtYEKXZoWplC2uGU6zKElbgm38" />
-<<<<<<< Updated upstream
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-=======
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
->>>>>>> Stashed changes
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -94,16 +94,22 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/FileHandler" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/Tic-Tac-Toe" />
     <property name="recentsLimit" value="5" />
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -115,6 +121,12 @@
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
@@ -196,10 +208,51 @@
       <option name="project" value="LOCAL" />
       <updated>1587463937149</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Hinzufügen der Klasse FileHandler">
+      <created>1587464130095</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587464130095</updated>
+    </task>
+    <task id="LOCAL-00004" summary="In Klasse FileHandler:&#10;ersetzen der Klasse main durch init und hinzufügen eines constructors">
+      <created>1587464971055</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587464971055</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Änderung bei der Auswahl eines bestimmten Themas">
+      <created>1587655615555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587655615555</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Änderung bei der Auswahl eines bestimmten Themas">
+      <created>1587662794727</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587662794728</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Änderung bei der Auswahl eines bestimmten Themas">
+      <created>1587665140354</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587665140354</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Hinzufügen der Benutzeroberfläche um die alten Quiz anzuschauen">
+      <created>1587672791213</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587672791213</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
-<<<<<<< Updated upstream
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1302000" />
   </component>
@@ -208,18 +261,25 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
-=======
->>>>>>> Stashed changes
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="Hinzufügen der Klasse Question" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hinzufügen der Klasse Question" />
+    <MESSAGE value="Hinzufügen der Klasse FileHandler" />
+    <MESSAGE value="In Klasse FileHandler&#10;ersetzen der Klasse main" />
+    <MESSAGE value="In Klasse FileHandler:&#10;ersetzen der Klasse main durch init und hinzufügen eines constructors" />
+    <MESSAGE value="Änderung bei der Auswahl einem bestimmten Thema" />
+    <MESSAGE value="Änderung bei der Auswahl eines bestimmten Themas" />
+    <MESSAGE value="Hinzufügen der Benutzeroberfläche um die alten Quiz anzuschauen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hinzufügen der Benutzeroberfläche um die alten Quiz anzuschauen" />
   </component>
 </project>

@@ -1,10 +1,22 @@
 package sample;
 
 import java.io.*;
+import java.util.Arrays;
+
 //Klasse zum lesen des Files und erstellen der Fragen mit den dazugehörigen antworten
 public class FileHandler {
-    public static void main(String[] args) throws IOException {
-        File file = new File("Balkankriege_quiztest.txt");
+    private File file;
+    public Question[] questions;
+
+    FileHandler(String Filename) throws IOException {
+        this.file = new File("Themenbereiche/"+ Filename);
+        init();
+    }
+
+
+
+    public void init() throws IOException {
+
         BufferedReader buf = null;
 
         //BufferedReader wird erstellt
@@ -26,15 +38,17 @@ public class FileHandler {
 
         //String wird aufgeteilt
         String[] parts = fileAsString.split("\n");
-        //Das Array wo die Fragen mit den dazugehörigen Antworten entahlten sind wird erstellt
-        Question[] questions = new Question[parts.length/4];
+        //Das Array wo die Fragen mit den dazugehörigen Antworten enthalten sind wird erstellt
+        questions = new Question[parts.length/4];
         fill(questions, parts);
 
         // --BEISPIEL-- Ausgabe der letzten Frage
-        System.out.println(questions[9].getQuestion());
+
+        /*System.out.println(questions[9].getQuestion());
         System.out.println(questions[9].getAnswers(0));
         System.out.println(questions[9].getAnswers(1));
-        System.out.println(questions[9].getAnswers(2));
+        System.out.println(questions[9].getAnswers(2));*/
+
     }
 
     //Initialisieren des Question Arrays
@@ -50,5 +64,19 @@ public class FileHandler {
             i++;
         }
         return questions;
+    }
+
+    public String getQuestions(int frage) {
+        return questions[frage].getQuestion();
+    }
+    public String getAnswer(int frage, int antw){
+        return questions[frage].getAnswers(antw);
+    }
+
+    @Override
+    public String toString() {
+        return "FileHandler{" +
+                "questions=" + Arrays.toString(questions) +
+                '}';
     }
 }
