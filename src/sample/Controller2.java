@@ -14,8 +14,7 @@ import javafx.stage.StageStyle;
 
 import java.io.File;
 import java.io.IOException;
-
-
+import java.util.Arrays;
 
 
 public class Controller2 {
@@ -45,7 +44,7 @@ public class Controller2 {
             stage2.setResizable(false);
             stage2.show();
             stage1.close();
-        } else if(event.getSource() == aktuellthema){
+        } else if (event.getSource() == aktuellthema) {
             Stage stage1 = (Stage) aktuellthema.getScene().getWindow();
 
             Stage stage2 = new Stage();
@@ -60,8 +59,7 @@ public class Controller2 {
             stage1.close();
 
 
-
-        } else if(event.getSource() == letztefehler){
+        } else if (event.getSource() == letztefehler) {
             Stage stage1 = (Stage) letztefehler.getScene().getWindow();
 
             Stage stage2 = new Stage();
@@ -83,27 +81,29 @@ public class Controller2 {
         MenuItem clickedMenuItem = (MenuItem) actionEvent.getTarget();
         String buttonlabel = clickedMenuItem.getText();
         System.out.println(buttonlabel);
-            //Die Themenbereiche werden in topicList gespeichert
-            File f = new File("Themenbereiche");
-            String[] topicList = f.list();
+        //Die Themenbereiche werden in topicList gespeichert
+        File f = new File("Themenbereiche");
+        String[] topicList = f.list();
 
-            // Hier bitte UI einfügen welches dem User ermöglicht sich ein topic aus topicList auszusuchen dieses
-            // soll in die Variable chosenTopic gespeichert werden
+        String chosenTopic = buttonlabel;
+        FileHandler fileHandler = new FileHandler(chosenTopic + ".txt");
 
-            String chosenTopic = buttonlabel;
-            FileHandler fileHandler = new FileHandler(chosenTopic + ".txt");
-             Stage stage1 = (Stage) aktuellthema.getScene().getWindow();
-
-            Stage stage2 = new Stage();
-            FXMLLoader fxmlloader = new FXMLLoader();
-            stage2.initStyle(StageStyle.UNDECORATED);
-            Pane root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
-            Scene scene = new Scene(root, 400, 600);
-            stage2.setScene(scene);
-            scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
-            stage2.setResizable(false);
-            stage2.show();
-            stage1.close();
+        Stage stage1 = (Stage) aktuellthema.getScene().getWindow();
+        Stage stage2 = new Stage();
+        FXMLLoader fxmlloader = new FXMLLoader();
+        stage2.initStyle(StageStyle.UNDECORATED);
+        Pane root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
+        Scene scene = new Scene(root, 400, 600);
+        stage2.setScene(scene);
+        scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
+        stage2.setResizable(false);
+        stage2.show();
+        stage1.close();
+        System.out.println(fileHandler.getQuestions(0));
+        for(int i = 0;i<3;i++){
+            System.out.println(fileHandler.getAnswer(0, i));
+        }
     }
+
 }
 
