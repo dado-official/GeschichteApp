@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Ausgabe der Antworten in der Kommandozeile zur Überprüffung">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Übergabe von chosentopic an Quizlayout">
+      <change afterPath="$PROJECT_DIR$/src/sample/Workinprogress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/work.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/workinprogress.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/quizlayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/quizlayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/quizstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/quizstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Quizlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Quizlayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/quizalt.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/quizalt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/quizlayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/quizlayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/quizstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/quizstyle.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -247,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587672791213</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Übergabe von chosentopic an Quizlayout">
+      <created>1587902505202</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587902505203</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -277,6 +292,7 @@
     <MESSAGE value="Änderung bei der Auswahl einem bestimmten Thema" />
     <MESSAGE value="Änderung bei der Auswahl eines bestimmten Themas" />
     <MESSAGE value="Hinzufügen der Benutzeroberfläche um die alten Quiz anzuschauen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hinzufügen der Benutzeroberfläche um die alten Quiz anzuschauen" />
+    <MESSAGE value="Übergabe von chosentopic an Quizlayout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Übergabe von chosentopic an Quizlayout" />
   </component>
 </project>
