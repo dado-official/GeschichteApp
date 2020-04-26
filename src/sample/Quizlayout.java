@@ -90,7 +90,7 @@ public class Quizlayout {
                                 next.setDisable(false);
                         } else if(actionEvent.getSource()==next){
                                 randomizeQuestion(topic);
-                                clickedButton.getStyleClass().remove("right");
+                                resetbuttons();
                                 ablebutton();
                         } else{
                                 clickedButton.getStyleClass().add("false");
@@ -123,6 +123,18 @@ public class Quizlayout {
                 answer1.setDisable(false);
                 answer2.setDisable(false);
                 answer3.setDisable(false);
+        }
+
+        private  void resetbuttons(){
+                answer3.getStyleClass().clear();
+                answer3.getStyleClass().add("button");
+                answer2.getStyleClass().add("button:hover");
+                answer2.getStyleClass().clear();
+                answer2.getStyleClass().add("button");
+                answer1.getStyleClass().add("button:hover");
+                answer1.getStyleClass().clear();
+                answer1.getStyleClass().add("button");
+                answer1.getStyleClass().add("button:hover");
         }
 
 
