@@ -57,6 +57,7 @@ public class Quizlayout {
                         answer3.setText(fileHandler.questions[rand_int1].getAnswers(rand.nextInt(3)));
                 }
         }
+
 }
 
 

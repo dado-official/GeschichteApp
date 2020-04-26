@@ -99,9 +99,11 @@ public class Controller2 {
         stage2.setResizable(false);
         stage2.show();
         stage1.close();
-        System.out.println(fileHandler.getQuestions(0));
+        Quizlayout controller = fxmlloader.<Quizlayout>getController();
+        controller.randomizeQuestion(chosenTopic);
+        System.out.println(fileHandler.getQuestions(5));
         for(int i = 0;i<3;i++){
-            System.out.println(fileHandler.getAnswer(0, i));
+            System.out.println(fileHandler.getAnswer(5, i));
         }
     }
 
