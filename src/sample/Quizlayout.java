@@ -55,11 +55,10 @@ public class Quizlayout {
                 while (duplicate.contains(fileHandler.questions[rand_int1])){
                         rand_int1 = rand.nextInt(fileHandler.questions.length);
                 }
-                //Frage zum duplicateArray hinzufügen
-                duplicate.add(fileHandler.questions[rand_int1]);
                 //Frage anzeigen
                 frage.setText(fileHandler.questions[rand_int1].getQuestion());
-
+                //Frage zum duplicateArray hinzufügen
+                duplicate.add(fileHandler.questions[rand_int1]);
 
                 //Antworten werden zufällig zugeordnet
                 answer1.setText(fileHandler.questions[rand_int1].getAnswers(rand.nextInt(3)));
