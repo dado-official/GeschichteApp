@@ -37,28 +37,25 @@ public class Quizlayout {
         private int counter = 0;
 
         //ArrayList zum Speichern der bereits angezeigten Fragen
-        private ArrayList<Question> duplicate = new ArrayList<>();
-
+        private ArrayList<String> duplicate = new ArrayList<>();
+        private Random rand = new Random();
 
         void randomizeQuestion(String chosenTopic) throws IOException {
                 next.setDisable(true);
                 FileHandler fileHandler = new FileHandler(chosenTopic + ".txt");
-                fileHandler.init();
                 topic = chosenTopic;
 
-
-                Random rand = new Random();
                 //Auswählen einer Zufälligen Frage
                 rand_int1 = rand.nextInt(fileHandler.questions.length);
 
                 //Überprüfen ob die Frage bereits angezeigt wurde
-                while (duplicate.contains(fileHandler.questions[rand_int1])){
+                while (duplicate.contains(fileHandler.questions[rand_int1].getQuestion())){
                         rand_int1 = rand.nextInt(fileHandler.questions.length);
                 }
                 //Frage anzeigen
                 frage.setText(fileHandler.questions[rand_int1].getQuestion());
                 //Frage zum duplicateArray hinzufügen
-                duplicate.add(fileHandler.questions[rand_int1]);
+                duplicate.add(fileHandler.questions[rand_int1].getQuestion());
 
                 //Antworten werden zufällig zugeordnet
                 answer1.setText(fileHandler.questions[rand_int1].getAnswers(rand.nextInt(3)));
