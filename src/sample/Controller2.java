@@ -24,10 +24,6 @@ public class Controller2 {
     private Button aktuellthema;
     @FXML
     private Button letztefehler;
-    @FXML
-    private MenuButton bestthemen;
-    @FXML
-    private MenuItem balkankriege;
 
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
@@ -56,7 +52,7 @@ public class Controller2 {
             scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
             stage2.setResizable(false);
             Quizlayout controller = fxmlloader.<Quizlayout>getController();
-            controller.randomizeQuestion("Balkankriege");
+            controller.randomizeQuestion("Julikrise");
             stage2.show();
             stage1.close();
 
@@ -82,7 +78,6 @@ public class Controller2 {
     public void handleItemAction(ActionEvent actionEvent) throws IOException {
         MenuItem clickedMenuItem = (MenuItem) actionEvent.getTarget();
         String buttonlabel = clickedMenuItem.getText();
-        System.out.println(buttonlabel);
         //Die Themenbereiche werden in topicList gespeichert
         File f = new File("Themenbereiche");
         String[] topicList = f.list();
@@ -103,10 +98,6 @@ public class Controller2 {
         stage1.close();
         Quizlayout controller = fxmlloader.<Quizlayout>getController();
         controller.randomizeQuestion(chosenTopic);
-        System.out.println(fileHandler.getQuestions(5));
-        for(int i = 0;i<3;i++){
-            System.out.println(fileHandler.getAnswer(5, i));
-        }
     }
 
 }
