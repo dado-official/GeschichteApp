@@ -84,30 +84,35 @@ public class Quizlayout {
                         disablebutton();
                         next.setDisable(false);
                 } else if(actionEvent.getSource()==next){
-                        randomizeQuestion(topic);
-                        resetbuttons();
                         ++counter;
-                        ablebutton();
+                        if (counter == 10){
+                                Stage stage1 = (Stage) frage.getScene().getWindow();
+
+                                Stage stage2 = new Stage();
+                                FXMLLoader fxmlloader = new FXMLLoader();
+                                stage2.initStyle(StageStyle.UNDECORATED);
+                                Pane root = fxmlloader.load(getClass().getResource("geschichtequiz2.fxml").openStream());
+                                Scene scene = new Scene(root, 400, 600);
+                                stage2.setScene(scene);
+                                scene.getStylesheets().add(getClass().getResource("style2.css").toExternalForm());
+                                stage2.setResizable(false);
+                                stage2.show();
+                                stage1.close();
+
+                        } else {
+                                randomizeQuestion(topic);
+                                resetbuttons();
+
+                                ablebutton();
+                        }
+
                 } else{
                         clickedButton.getStyleClass().add("false");
                         disablebutton();
                         next.setDisable(false);
                 }
 
-                 if (counter == 10){
-                         Stage stage1 = (Stage) frage.getScene().getWindow();
 
-                         Stage stage2 = new Stage();
-                         FXMLLoader fxmlloader = new FXMLLoader();
-                         stage2.initStyle(StageStyle.UNDECORATED);
-                         Pane root = fxmlloader.load(getClass().getResource("geschichtequiz2.fxml").openStream());
-                         Scene scene = new Scene(root, 400, 600);
-                         stage2.setScene(scene);
-                         scene.getStylesheets().add(getClass().getResource("style2.css").toExternalForm());
-                         stage2.setResizable(false);
-                         stage2.show();
-                         stage1.close();
-                 }
 
         }
 

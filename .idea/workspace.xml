@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="kürzen der randomize question methode">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Button Style zurücksetzen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Quizlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Quizlayout.java" afterDir="false" />
     </list>
@@ -74,7 +74,6 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1XtYEKXZoWplC2uGU6zKElbgm38" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectReloadState">
@@ -268,21 +267,7 @@
       <option name="project" value="LOCAL" />
       <updated>1587929401618</updated>
     </task>
-    <task id="LOCAL-00012" summary="kürzen der randomize question methode">
-      <created>1587977743255</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1587977743255</updated>
-    </task>
-    <task id="LOCAL-00013" summary="kürzen der randomize question methode">
-      <created>1587978208651</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1587978208651</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -315,7 +300,6 @@
     <MESSAGE value="Übergabe von chosentopic an Quizlayout" />
     <MESSAGE value="Überprüffung der Antwort und Wor in Progress Layout bei Quiz mit letzten Fehlern" />
     <MESSAGE value="Button Style zurücksetzen" />
-    <MESSAGE value="kürzen der randomize question methode" />
-    <option name="LAST_COMMIT_MESSAGE" value="kürzen der randomize question methode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Button Style zurücksetzen" />
   </component>
 </project>
