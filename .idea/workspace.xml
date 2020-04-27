@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Button Style zurücksetzen">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Hinzufügen der Methode RandomizeQuestion, welche die Fragen und antworten zufällig auswählt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Themenbereiche/Balkankriege.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/Balkankriege.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/quizlayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/quizlayout.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Quizlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Quizlayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/quizlayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/quizlayout.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

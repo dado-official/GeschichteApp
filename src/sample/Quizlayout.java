@@ -52,16 +52,14 @@ public class Quizlayout {
                 rand_int1 = rand.nextInt(fileHandler.questions.length);
 
                 //Überprüfen ob die Frage bereits angezeigt wurde
-                for(int i = 0; i < duplicate.size(); i++){
-                        if(fileHandler.questions[rand_int1] == duplicate.get(i)){
-                                rand_int1 = rand.nextInt(fileHandler.questions.length);
-                                i = 0;
-                        }
+                while (duplicate.contains(fileHandler.questions[rand_int1])){
+                        rand_int1 = rand.nextInt(fileHandler.questions.length);
                 }
-                //Frage anzeigen
-                frage.setText(fileHandler.questions[rand_int1].getQuestion());
                 //Frage zum duplicateArray hinzufügen
                 duplicate.add(fileHandler.questions[rand_int1]);
+                //Frage anzeigen
+                frage.setText(fileHandler.questions[rand_int1].getQuestion());
+
 
                 //Antworten werden zufällig zugeordnet
                 answer1.setText(fileHandler.questions[rand_int1].getAnswers(rand.nextInt(3)));
