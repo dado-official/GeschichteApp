@@ -6,10 +6,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -33,13 +33,14 @@ public class Quizlayout {
         private Button next;
 
         private String topic;
-        int rand_int1;
+        private int rand_int1;
+        private int counter = 0;
 
         //ArrayList zum Speichern der bereits angezeigten Fragen
-        private ArrayList<Question> duplicate = new ArrayList<Question>();
+        private ArrayList<Question> duplicate = new ArrayList<>();
 
 
-        public void randomizeQuestion (String chosenTopic) throws IOException {
+        void randomizeQuestion(String chosenTopic) throws IOException {
                 next.setDisable(true);
                 FileHandler fileHandler = new FileHandler(chosenTopic + ".txt");
                 fileHandler.init();
@@ -79,37 +80,41 @@ public class Quizlayout {
 
 
 
-        public void handleButtonAction(ActionEvent actionEvent) throws IOException, InterruptedException {
+        public void handleButtonAction(ActionEvent actionEvent) throws IOException{
                 Button clickedButton = (Button) actionEvent.getTarget();
                 String buttonlabel = clickedButton.getText();
                 FileHandler filehandler = new FileHandler(topic + ".txt");
 
-                        if(buttonlabel.equals(filehandler.getAnswer(rand_int1, 0))){
-                                clickedButton.getStyleClass().add("right");
-                                disablebutton();
-                                next.setDisable(false);
-                        } else if(actionEvent.getSource()==next){
-                                randomizeQuestion(topic);
-                                resetbuttons();
-                                ablebutton();
-                        } else{
-                                clickedButton.getStyleClass().add("false");
-                                disablebutton();
-                                next.setDisable(false);
-                        }
+                if(buttonlabel.equals(filehandler.getAnswer(rand_int1, 0))){
+                        clickedButton.getStyleClass().add("right");
+                        disablebutton();
+                        next.setDisable(false);
+                } else if(actionEvent.getSource()==next){
+                        randomizeQuestion(topic);
+                        resetbuttons();
+                        ++counter;
+                        ablebutton();
+                } else{
+                        clickedButton.getStyleClass().add("false");
+                        disablebutton();
+                        next.setDisable(false);
+                }
 
-                /*Stage stage1 = (Stage) frage.getScene().getWindow();
+                 if (counter == 10){
+                         Stage stage1 = (Stage) frage.getScene().getWindow();
 
-                Stage stage2 = new Stage();
-                FXMLLoader fxmlloader = new FXMLLoader();
-                stage2.initStyle(StageStyle.UNDECORATED);
-                Pane root = fxmlloader.load(getClass().getResource("geschichtequiz2.fxml").openStream());
-                Scene scene = new Scene(root, 400, 600);
-                stage2.setScene(scene);
-                scene.getStylesheets().add(getClass().getResource("style2.css").toExternalForm());
-                stage2.setResizable(false);
-                stage2.show();
-                stage1.close();*/
+                         Stage stage2 = new Stage();
+                         FXMLLoader fxmlloader = new FXMLLoader();
+                         stage2.initStyle(StageStyle.UNDECORATED);
+                         Pane root = fxmlloader.load(getClass().getResource("geschichtequiz2.fxml").openStream());
+                         Scene scene = new Scene(root, 400, 600);
+                         stage2.setScene(scene);
+                         scene.getStylesheets().add(getClass().getResource("style2.css").toExternalForm());
+                         stage2.setResizable(false);
+                         stage2.show();
+                         stage1.close();
+                 }
+
         }
 
 
