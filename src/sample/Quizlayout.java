@@ -86,7 +86,6 @@ public class Quizlayout {
                         disablebutton();
                         next.setDisable(false);
                         ++richtig;
-                        System.out.println(richtig);
                 } else if(actionEvent.getSource()==next){
                         ++counter;
                         if (counter == 10){
@@ -115,7 +114,6 @@ public class Quizlayout {
                         disablebutton();
                         next.setDisable(false);
                         ++falsch;
-                        System.out.println(falsch);
                 }
 
 

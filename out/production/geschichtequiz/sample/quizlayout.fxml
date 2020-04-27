@@ -12,7 +12,7 @@
   <children>
     <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="400.0">
       <bottom>
-        <Button fx:id="next" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="200.0" text="Nächste Frage" BorderPane.alignment="CENTER">
+        <Button fx:id="next" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="200.0" text="weiter" BorderPane.alignment="CENTER">
           <BorderPane.margin>
             <Insets bottom="30.0" />
           </BorderPane.margin>
