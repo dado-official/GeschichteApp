@@ -39,6 +39,7 @@ public class Quizlayout {
         //ArrayList zum Speichern der bereits angezeigten Fragen
         private ArrayList<String> duplicate = new ArrayList<>();
         private Random rand = new Random();
+        int richtig = 0, falsch = 0;
 
         void randomizeQuestion(String chosenTopic) throws IOException {
                 next.setDisable(true);
@@ -79,10 +80,13 @@ public class Quizlayout {
                 String buttonlabel = clickedButton.getText();
                 FileHandler filehandler = new FileHandler(topic + ".txt");
 
+
                 if(buttonlabel.equals(filehandler.getAnswer(rand_int1, 0))){
                         clickedButton.getStyleClass().add("right");
                         disablebutton();
                         next.setDisable(false);
+                        ++richtig;
+                        System.out.println(richtig);
                 } else if(actionEvent.getSource()==next){
                         ++counter;
                         if (counter == 10){
@@ -91,18 +95,18 @@ public class Quizlayout {
                                 Stage stage2 = new Stage();
                                 FXMLLoader fxmlloader = new FXMLLoader();
                                 stage2.initStyle(StageStyle.UNDECORATED);
-                                Pane root = fxmlloader.load(getClass().getResource("geschichtequiz2.fxml").openStream());
+                                Pane root = fxmlloader.load(getClass().getResource("zusammenfassung.fxml").openStream());
                                 Scene scene = new Scene(root, 400, 600);
                                 stage2.setScene(scene);
-                                scene.getStylesheets().add(getClass().getResource("style2.css").toExternalForm());
+                                scene.getStylesheets().add(getClass().getResource("zusammenfassung.css").toExternalForm());
                                 stage2.setResizable(false);
+                                Zusammenfassung controller = fxmlloader.getController();
+                                controller.showLabelContext(richtig, falsch);
                                 stage2.show();
                                 stage1.close();
-
                         } else {
                                 randomizeQuestion(topic);
                                 resetbuttons();
-
                                 ablebutton();
                         }
 
@@ -110,6 +114,8 @@ public class Quizlayout {
                         clickedButton.getStyleClass().add("false");
                         disablebutton();
                         next.setDisable(false);
+                        ++falsch;
+                        System.out.println(falsch);
                 }
 
 
