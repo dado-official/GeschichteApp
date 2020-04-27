@@ -55,6 +55,8 @@ public class Controller2 {
             stage2.setScene(scene);
             scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
             stage2.setResizable(false);
+            Quizlayout controller = fxmlloader.<Quizlayout>getController();
+            controller.randomizeQuestion("Balkankriege");
             stage2.show();
             stage1.close();
 
@@ -65,10 +67,10 @@ public class Controller2 {
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
             stage2.initStyle(StageStyle.UNDECORATED);
-            Pane root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
+            Pane root = fxmlloader.load(getClass().getResource("workinprogress.fxml").openStream());
             Scene scene = new Scene(root, 400, 600);
             stage2.setScene(scene);
-            scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
+            scene.getStylesheets().add(getClass().getResource("work.css").toExternalForm());
             stage2.setResizable(false);
             stage2.show();
             stage1.close();
@@ -99,9 +101,11 @@ public class Controller2 {
         stage2.setResizable(false);
         stage2.show();
         stage1.close();
-        System.out.println(fileHandler.getQuestions(0));
+        Quizlayout controller = fxmlloader.<Quizlayout>getController();
+        controller.randomizeQuestion(chosenTopic);
+        System.out.println(fileHandler.getQuestions(5));
         for(int i = 0;i<3;i++){
-            System.out.println(fileHandler.getAnswer(0, i));
+            System.out.println(fileHandler.getAnswer(5, i));
         }
     }
 
