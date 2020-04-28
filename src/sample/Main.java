@@ -8,9 +8,12 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class Main extends Application {
+    public static LogHandler logHandler;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        logHandler = new LogHandler();
+        logHandler.checkForNewFiles();
         Parent root = FXMLLoader.load(getClass().getResource("geschichtequiz.fxml"));
         primaryStage.initStyle(StageStyle.UNDECORATED);
         Scene scene = new Scene(root, 400, 600);

@@ -11,6 +11,9 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
@@ -40,11 +43,21 @@ public class Quizlayout {
         private ArrayList<String> duplicate = new ArrayList<>();
         private Random rand = new Random();
         int richtig = 0, falsch = 0;
+        boolean firstquestion = true;
+
+        void startAttempt() throws IOException {
+                if (firstquestion){
+                        Main.logHandler.newAttempt(topic);
+                        firstquestion = false;
+                }
+        }
+
 
         void randomizeQuestion(String chosenTopic) throws IOException {
                 next.setDisable(true);
                 FileHandler fileHandler = new FileHandler(chosenTopic + ".txt");
                 topic = chosenTopic;
+                startAttempt();
 
                 //Auswählen einer Zufälligen Frage
                 rand_int1 = rand.nextInt(fileHandler.questions.length);
@@ -53,6 +66,8 @@ public class Quizlayout {
                 while (duplicate.contains(fileHandler.questions[rand_int1].getQuestion())){
                         rand_int1 = rand.nextInt(fileHandler.questions.length);
                 }
+
+                Main.logHandler.writeQuestionAndAnswersToAttempt(fileHandler.questions[rand_int1], topic);
                 //Frage anzeigen
                 frage.setText(fileHandler.questions[rand_int1].getQuestion());
                 //Frage zum duplicateArray hinzufügen
@@ -78,6 +93,12 @@ public class Quizlayout {
         public void handleButtonAction(ActionEvent actionEvent) throws IOException{
                 Button clickedButton = (Button) actionEvent.getTarget();
                 String buttonlabel = clickedButton.getText();
+
+                //Angeklickte Antwort in Attempt File schreiben
+                if(actionEvent.getSource() != next){
+                        Main.logHandler.writeClickedAnswer(buttonlabel, topic);
+                }
+
                 FileHandler filehandler = new FileHandler(topic + ".txt");
 
 
