@@ -49,7 +49,7 @@ public class LogHandler {
                 }
             }
             if(!isHere){
-                //Quitz in log.txt hinzufügen
+                //Quiz in log.txt hinzufügen
                 String addString = str[0].concat(";0\n");
                 try {
                     Files.write(Paths.get("src/sample/log/log.txt"), addString.getBytes(), StandardOpenOption.APPEND);
