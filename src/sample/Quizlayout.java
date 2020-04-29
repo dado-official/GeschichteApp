@@ -11,10 +11,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -42,6 +39,7 @@ public class Quizlayout {
         //ArrayList zum Speichern der bereits angezeigten Fragen
         private ArrayList<String> duplicate = new ArrayList<>();
         private Random rand = new Random();
+        private FileHandler filehandler;
         int richtig = 0, falsch = 0;
         boolean firstquestion = true;
 
@@ -99,8 +97,7 @@ public class Quizlayout {
                         Main.logHandler.writeClickedAnswer(buttonlabel, topic);
                 }
 
-                FileHandler filehandler = new FileHandler(topic + ".txt");
-
+                filehandler = new FileHandler(topic + ".txt");
 
                 if(buttonlabel.equals(filehandler.getAnswer(rand_int1, 0))){
                         clickedButton.getStyleClass().add("right");
@@ -131,6 +128,7 @@ public class Quizlayout {
                         }
 
                 } else{
+                        safeWrongAnswer(filehandler.questions[rand_int1]);
                         clickedButton.getStyleClass().add("false");
                         disablebutton();
                         next.setDisable(false);
@@ -166,6 +164,22 @@ public class Quizlayout {
                 answer1.getStyleClass().add("button:hover");
         }
 
+        private void safeWrongAnswer(Question question){
+                try
+                {
+                        String filename= "wrong/wrongAnswers.txt";
+                        FileWriter fw = new FileWriter(filename,true);
+                        fw.write(question.getQuestion());
+                        fw.write(question.getAnswers(0));
+                        fw.write(question.getAnswers(1));
+                        fw.write(question.getAnswers(2));
+                        fw.close();
+                }
+                catch(IOException ioe)
+                {
+                        System.err.println("IOException: " + ioe.getMessage());
+                }
+        }
 
 }
 

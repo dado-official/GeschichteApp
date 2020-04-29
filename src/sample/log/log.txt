@@ -1,2 +1,2 @@
-Balkankriege;5
-Julikrise;1
+Balkankriege;7
+Julikrise;16
