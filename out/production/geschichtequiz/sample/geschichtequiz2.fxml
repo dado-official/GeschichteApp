@@ -34,6 +34,8 @@
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#handleItemAction" text="Julikrise"/>
                 <MenuItem mnemonicParsing="false" onAction="#handleItemAction" text="Balkankriege"/>
+                <MenuItem mnemonicParsing="false" onAction="#handleItemAction" text="Marokkokrisen"/>
+                <MenuItem mnemonicParsing="false" onAction="#handleItemAction" text="Spanisch-Amerikanischerkrieg"/>
               </items>
             </MenuButton>
           </children>

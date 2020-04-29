@@ -66,9 +66,6 @@ public class FileHandler {
         return questions;
     }
 
-    public String getQuestions(int frage) {
-        return questions[frage].getQuestion();
-    }
     public String getAnswer(int frage, int antw){
         return questions[frage].getAnswers(antw);
     }

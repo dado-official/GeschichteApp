@@ -2,26 +2,35 @@ England und Russland wurden Verbündete, indem sie sich auf die Aufteilung von w
 Asien
 Amerika
 Arktis
+<<<<<<< Updated upstream
 Arktis
 Wer war der gemeinsame Gegner von Deutschland und Italien, der an ihren Staatsterritorien direkt grenzt?
 Frankreich
 Österreich
 Spanien
 Österreich
+=======
+Asien
+>>>>>>> Stashed changes
 In welchen heutigen Staaten in Asien wirken die Einflussnahme von Russland andererseits nach?
 Iran
 Afghanistan
 Indien
+<<<<<<< Updated upstream
 Afghanistan
 In welchen heutigen Staaten in Asien wirken die Einflussnahme von England nach?
 Afghanistan
 Iran
 Pakistan
 Afghanistan
+=======
+Iran
+>>>>>>> Stashed changes
 Welches Büdnissystem hat sich in Europa vor dem 1. Weltkrieg entwickelt?
 Tripelentente
 Sechsbund
 Gar keines
+<<<<<<< Updated upstream
 Sechsbund
 Wer war der gemeinsame Gegner von Österreich und Deutschland, der an ihren Staatsterritorien direkt grenzt?
 Russland
@@ -43,8 +52,45 @@ Italien
 Frankreich
 Schweden
 Frankreich
+=======
+Tripelentente
+Wie viel Zeit verging zwischen der Kriegserklärung Österreichs an Serbien und der Kriegserklärung Englands an Österreich?
+11 Tage
+11 Stunden
+11 Wochen
+11 Tage
+>>>>>>> Stashed changes
 England und Frankreich wurden Verbündete, indem sie sich auf die Aufteilung von welchem Kontinent geeinigt haben?
 Afrika
 Antarktis
 Asien
+<<<<<<< Updated upstream
 Antarktis
+=======
+Afrika
+Wann beginnt die Julikrise?
+1914
+1913
+1915
+1914
+Wer war der gemeinsame Gegner von Deutschland und Italien, der an ihren Staatsterritorien direkt grenzt?
+Frankreich
+Österreich
+Spanien
+Frankreich
+In welchen heutigen Staaten in Asien wirken die Einflussnahme von England nach?
+Afghanistan
+Iran
+Pakistan
+Afghanistan
+Wie viel Zeit vergeht zwischen dem österreichischen Ultimatum an Serbien und der Kriegserklärung Österreichs an Serbien?
+5 Tage
+10 Tage
+15 Tage
+5 Tage
+Welcher Balkanstaat wurde von Russland unterstützt und stark geschützt?
+Serbien
+Albanien
+Bulgarien
+Serbien
+>>>>>>> Stashed changes

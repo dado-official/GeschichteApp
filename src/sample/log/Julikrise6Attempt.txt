@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 In welcher Krise hat die Gegnerschaft zwischen Deutschland und Frankreich eine Große Rolle gespielt?
 Marokkokrise
 Lybienkrise
@@ -13,20 +14,66 @@ Wann beginnt die Julikrise?
 1913
 1915
 1913
+=======
+Wer war der gemeinsame Gegner von Österreich und Deutschland, der an ihren Staatsterritorien direkt grenzt?
+Russland
+Italien
+Spanien
+Russland
+>>>>>>> Stashed changes
 Für die Balkanstaaten war der Erste Weltkrieg die Fortführung welcher Kriege?
 Balkankriege
 Marokkokriege
 Lybienkriege
+<<<<<<< Updated upstream
 Lybienkriege
+=======
+Marokkokriege
+Wie viel Zeit vergeht zwischen dem Beginn der Julikrise und dem österreichischen Ultimatum an Serbien?
+25 Tage
+24 Stunden
+2 Monate
+25 Tage
+England und Russland wurden Verbündete, indem sie sich auf die Aufteilung von welchem Kontinent geeinigt haben?
+Asien
+Amerika
+Arktis
+Asien
+Wie viel Zeit vergeht zwischen dem österreichischen Ultimatum an Serbien und der Kriegserklärung Österreichs an Serbien?
+5 Tage
+10 Tage
+15 Tage
+5 Tage
+England und Frankreich wurden Verbündete, indem sie sich auf die Aufteilung von welchem Kontinent geeinigt haben?
+Afrika
+Antarktis
+Asien
+Afrika
+>>>>>>> Stashed changes
 Wie viel Zeit verging zwischen der Kriegserklärung Österreichs an Serbien und der Kriegserklärung Englands an Österreich?
 11 Tage
 11 Stunden
 11 Wochen
+<<<<<<< Updated upstream
 11 Wochen
+=======
+11 Tage
+Welcher Balkanstaat wurde von Russland unterstützt und stark geschützt?
+Serbien
+Albanien
+Bulgarien
+Serbien
+Welches Büdnissystem hat sich in Europa vor dem 1. Weltkrieg entwickelt?
+Tripelentente
+Sechsbund
+Gar keines
+Tripelentente
+>>>>>>> Stashed changes
 Welcher Staat war in der Tripelentente?
 Russland
 China
 Spanien
+<<<<<<< Updated upstream
 Spanien
 In welchen heutigen Staaten in Asien wirken die Einflussnahme von England nach?
 Afghanistan
@@ -48,3 +95,6 @@ Tripelentente
 Sechsbund
 Gar keines
 Gar keines
+=======
+Russland
+>>>>>>> Stashed changes

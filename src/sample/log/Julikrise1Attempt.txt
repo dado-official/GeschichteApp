@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 Welches Büdnissystem hat sich in Europa vor dem 1. Weltkrieg entwickelt?
 Tripelentente
 Sechsbund
@@ -13,15 +14,52 @@ Iran
 Afghanistan
 Indien
 Iran
+=======
+England und Russland wurden Verbündete, indem sie sich auf die Aufteilung von welchem Kontinent geeinigt haben?
+Asien
+Amerika
+Arktis
+Asien
+Wie viel Zeit vergeht zwischen dem Beginn der Julikrise und dem österreichischen Ultimatum an Serbien?
+25 Tage
+24 Stunden
+2 Monate
+25 Tage
+England und Frankreich wurden Verbündete, indem sie sich auf die Aufteilung von welchem Kontinent geeinigt haben?
+Afrika
+Antarktis
+Asien
+Afrika
+Wer war der gemeinsame Gegner von Deutschland und Italien, der an ihren Staatsterritorien direkt grenzt?
+Frankreich
+Österreich
+Spanien
+Frankreich
+In welchen Kriegen hat die Gegnerschaft zwischen Russland und Österreich eine große Rolle gespielt?
+Balkankriege
+Deutschlandkriege
+Türkeikriege
+Balkankriege
+>>>>>>> Stashed changes
 In welchen heutigen Staaten in Asien wirken die Einflussnahme von England nach?
 Afghanistan
 Iran
 Pakistan
+<<<<<<< Updated upstream
 Pakistan
+=======
+Afghanistan
+Welcher Balkanstaat wurde von Russland unterstützt und stark geschützt?
+Serbien
+Albanien
+Bulgarien
+Albanien
+>>>>>>> Stashed changes
 Wie viel Zeit verging zwischen der Kriegserklärung Österreichs an Serbien und der Kriegserklärung Englands an Österreich?
 11 Tage
 11 Stunden
 11 Wochen
+<<<<<<< Updated upstream
 11 Stunden
 Wer war der gemeinsame Gegner von Deutschland und Italien, der an ihren Staatsterritorien direkt grenzt?
 Frankreich
@@ -38,13 +76,24 @@ Wie viel Zeit vergeht zwischen dem österreichischen Ultimatum an Serbien und de
 10 Tage
 15 Tage
 10 Tage
+=======
+11 Tage
+Welches Büdnissystem hat sich in Europa vor dem 1. Weltkrieg entwickelt?
+Tripelentente
+Sechsbund
+Gar keines
+Tripelentente
+>>>>>>> Stashed changes
 Welcher Staat war in der Tripelentente?
 Russland
 China
 Spanien
 Russland
+<<<<<<< Updated upstream
 In welchen Kriegen hat die Gegnerschaft zwischen Russland und Österreich eine große Rolle gespielt?
 Balkankriege
 Deutschlandkriege
 Türkeikriege
 Türkeikriege
+=======
+>>>>>>> Stashed changes
