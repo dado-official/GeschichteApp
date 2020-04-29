@@ -29,12 +29,7 @@
       <center>
         <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="200.0">
           <children>
-            <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Quiz auswählen" GridPane.columnIndex="0" GridPane.rowIndex="0">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
-              </items>
-            </MenuButton>
+            <MenuButton fx:id="menu" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="200.0" text="Quiz auswählen" GridPane.columnIndex="0" GridPane.rowIndex="0" />
           </children>
           <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-1.0" minWidth="10.0" prefWidth="200.0" />

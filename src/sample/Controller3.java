@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -15,6 +16,8 @@ import java.io.IOException;
 public class Controller3 {
     @FXML
     private Button zuruck;
+    @FXML
+    private MenuButton menu;
 
 
     @FXML
@@ -40,5 +43,11 @@ public class Controller3 {
         MenuItem clickedMenuItem = (MenuItem) actionEvent.getTarget();
         String buttonlabel = clickedMenuItem.getText();
         System.out.println(buttonlabel);
+    }
+
+    public void addMenuItem(String name){
+        MenuItem m = new MenuItem(name);
+        menu.getItems().add(m);
+
     }
 }

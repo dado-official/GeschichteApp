@@ -1,5 +1,8 @@
 package sample;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.layout.Pane;
+
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -106,6 +109,11 @@ public class LogHandler {
         File f = new File("src/sample/log/" + topic + getAttemptsNumber(topic) + "Attempt.txt");
         f.createNewFile();
         addAttempt(topic);
+        FXMLLoader loader = new FXMLLoader();
+        Pane root = loader.load(getClass().getResource("geschichtequiz3.fxml").openStream());
+        Controller3 controller = loader.getController();
+        controller.addMenuItem(topic+getAttemptsNumber(topic));
+        System.out.println("Hinzugefügt");
     }
 
     public void writeQuestionAndAnswersToAttempt(Question question, String topic) throws IOException {
