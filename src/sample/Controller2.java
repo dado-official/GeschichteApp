@@ -63,13 +63,15 @@ public class Controller2 {
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
             stage2.initStyle(StageStyle.UNDECORATED);
-            Pane root = fxmlloader.load(getClass().getResource("workinprogress.fxml").openStream());
+            Pane root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
             Scene scene = new Scene(root, 400, 600);
             stage2.setScene(scene);
-            scene.getStylesheets().add(getClass().getResource("work.css").toExternalForm());
+            scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
             stage2.setResizable(false);
             stage2.show();
             stage1.close();
+            Quizlayout controller = fxmlloader.<Quizlayout>getController();
+            controller.randomizeQuestion("wrongAnswers");
         }
 
 

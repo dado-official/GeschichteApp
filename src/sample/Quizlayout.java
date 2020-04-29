@@ -167,12 +167,12 @@ public class Quizlayout {
         private void safeWrongAnswer(Question question){
                 try
                 {
-                        String filename= "wrong/wrongAnswers.txt";
+                        String filename= "Themenbereiche/wrongAnswers.txt";
                         FileWriter fw = new FileWriter(filename,true);
-                        fw.write(question.getQuestion());
-                        fw.write(question.getAnswers(0));
-                        fw.write(question.getAnswers(1));
-                        fw.write(question.getAnswers(2));
+                        fw.write(question.getQuestion()+"\n");
+                        fw.write(question.getAnswers(0)+"\n");
+                        fw.write(question.getAnswers(1)+"\n");
+                        fw.write(question.getAnswers(2)+"\n");
                         fw.close();
                 }
                 catch(IOException ioe)
