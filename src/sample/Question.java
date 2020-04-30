@@ -6,22 +6,25 @@ import java.util.Arrays;
 public class Question {
     private String question;
     //Die Antwort an der Stelle answers[0] ist immer die korrekte antwort
-    private String[] answers = new String[3];
-    private int i = 0;
+    private int i = 0,anz;
+    Question(String question){
 
-    public Question(String question){
         this.question = question;
+        this.anz=anz;
     }
+    private String[] answers = new String[3];
 
-    public void addAnswer(String answer){
+
+
+    void addAnswer(String answer){
         answers[i] = answer;
         i++;
     }
 
-    public String getAnswers(int i) {
+    String getAnswers(int i) {
         return answers[i];
     }
-    public String getQuestion() {
+    String getQuestion() {
         return question;
     }
 

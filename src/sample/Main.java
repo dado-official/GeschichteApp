@@ -8,12 +8,11 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class Main extends Application {
-    public static LogHandler logHandler;
+    static LogHandler logHandler;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        logHandler = new LogHandler();
-        logHandler.checkForNewFiles();
+
         Parent root = FXMLLoader.load(getClass().getResource("geschichtequiz.fxml"));
         primaryStage.initStyle(StageStyle.UNDECORATED);
         Scene scene = new Scene(root, 400, 600);
@@ -21,6 +20,8 @@ public class Main extends Application {
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setResizable(false);
         primaryStage.show();
+        logHandler = new LogHandler();
+        logHandler.checkForNewFiles();
     }
 
 

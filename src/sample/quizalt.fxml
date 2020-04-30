@@ -13,12 +13,12 @@
       <bottom>
         <GridPane>
           <children>
-            <Button onAction="#handleButtonAction" fx:id="zuruck" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="&lt;--zurück" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <Button fx:id="zuruck" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="100.0" text="&lt;--zurück" GridPane.columnIndex="0" GridPane.rowIndex="0">
               <GridPane.margin>
                 <Insets left="50.0" right="20.0" />
               </GridPane.margin>
             </Button>
-            <Button fx:id="weiter" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="weiter --&gt;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <Button onAction="#handleButtonAction" fx:id="weiter" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="weiter --&gt;" GridPane.columnIndex="1" GridPane.rowIndex="0">
               <GridPane.margin>
                 <Insets left="50.0" right="20.0" />
               </GridPane.margin>
@@ -39,9 +39,9 @@
       <center>
         <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="300.0">
           <children>
-            <TextField alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="200.0" text="Antwort 1" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-            <TextField alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="200.0" text="Antwort 2" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-            <TextField alignment="CENTER" editable="false" prefHeight="50.0" prefWidth="200.0" text="Antwort 3" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="answer1" alignment="CENTER" editable="false" prefWidth="-1.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+            <TextField id="answer1" fx:id="answer2" alignment="CENTER" editable="false" prefWidth="-1.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <TextField id="answer1" fx:id="answer3" alignment="CENTER" editable="false" prefWidth="-1.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
           </children>
           <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -57,11 +57,11 @@
         </GridPane>
       </center>
       <top>
-        <TextField alignment="CENTER" prefHeight="50.0" prefWidth="300.0" text="Frage" BorderPane.alignment="CENTER">
+        <Label fx:id="frage" alignment="CENTER" contentDisplay="CENTER" text="Label" wrapText="true" BorderPane.alignment="CENTER">
           <BorderPane.margin>
-            <Insets left="10.0" right="10.0" top="100.0" />
+            <Insets left="50.0" right="50.0" top="100.0" />
           </BorderPane.margin>
-        </TextField>
+        </Label>
       </top>
     </BorderPane>
   </children>

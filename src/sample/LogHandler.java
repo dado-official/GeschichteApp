@@ -53,10 +53,16 @@ public class LogHandler {
             }
             if(!isHere){
                 //Quiz in log.txt hinzufügen
-                String addString = str[0].concat(";0\n");
+                String addString = str[0].concat(";1\n");
                 try {
                     Files.write(Paths.get("src/sample/log/log.txt"), addString.getBytes(), StandardOpenOption.APPEND);
                     System.out.println("new objekt added to log.txt --> " + f.getName());
+                    FXMLLoader loader = new FXMLLoader();
+                    Pane root = loader.load(getClass().getResource("geschichtequiz2.fxml").openStream());
+                    Controller2 controller = loader.getController();
+                    controller.addthema(f.getName());
+                    System.out.println("Hinzugefügt");
+
                 }catch (IOException e) {
                     //exception handling left as an exercise for the reader
                     e.printStackTrace();
@@ -106,7 +112,7 @@ public class LogHandler {
     }
 
     public void newAttempt(String topic) throws IOException {
-        File f = new File("src/sample/log/" + topic + getAttemptsNumber(topic) + "Attempt.txt");
+        File f = new File("src/sample/log/" + topic + getAttemptsNumber(topic) + ".txt");
         f.createNewFile();
         addAttempt(topic);
         FXMLLoader loader = new FXMLLoader();
@@ -119,7 +125,7 @@ public class LogHandler {
     public void writeQuestionAndAnswersToAttempt(Question question, String topic) throws IOException {
         //Frage mit Antworten in File schreiben
         try {
-            Files.write(Paths.get("src/sample/log/" + topic + (getAttemptsNumber(topic)-1) + "Attempt.txt"),
+            Files.write(Paths.get("src/sample/log/" + topic + (getAttemptsNumber(topic)-1) + ".txt"),
                     question.getQuestion().concat("\n")
                             .concat(question.getAnswers(0).concat("\n")
                             .concat(question.getAnswers(1).concat("\n")
@@ -132,7 +138,7 @@ public class LogHandler {
 
     void writeClickedAnswer(String string, String topic){
         try {
-            Files.write(Paths.get("src/sample/log/" + topic + (getAttemptsNumber(topic)-1) + "Attempt.txt"),
+            Files.write(Paths.get("src/sample/log/" + topic + (getAttemptsNumber(topic)-1) + ".txt"),
                     string.concat("\n").getBytes(), StandardOpenOption.APPEND);
         }catch (IOException e) {
             //exception handling left as an exercise for the reader

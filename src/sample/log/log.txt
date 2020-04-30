@@ -1,5 +1,5 @@
-Balkankriege;0
-Julikrise;0
-Marokkokrisen;0
-Spanisch-Amerikanischerkrieg;0
-wrongAnswers;0
+Balkankriege;1
+Julikrise;5
+Marokkokrisen;2
+Spanisch-Amerikanischerkrieg;1
+wrongAnswers;2

@@ -26,6 +26,9 @@ public class Controller2 {
     private Button letztefehler;
 
     @FXML
+    private MenuButton themen;
+
+    @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
         if (event.getSource() == zuruck) {
             Stage stage1 = (Stage) zuruck.getScene().getWindow();
@@ -100,6 +103,10 @@ public class Controller2 {
         stage1.close();
         Quizlayout controller = fxmlloader.<Quizlayout>getController();
         controller.randomizeQuestion(chosenTopic);
+    }
+    public void addthema(String topic){
+        themen.getItems().add(new MenuItem(topic));
+        System.out.println("aufgerufen");
     }
 
 }
