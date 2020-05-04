@@ -1,34 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="geschichtequiz:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Löschen der QuizAttempts und funktion zum hinzufügen von Menuitems">
-      <change afterPath="$PROJECT_DIR$/src/sample/FileHandlerAlt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Questionalt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/log/Julikrise1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/log/Julikrise2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/log/Julikrise3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/log/Julikrise4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/log/Marokkokrisen1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/log/wrongAnswers1.txt" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/geschichtequiz_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeschichteApp.userlibraries" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geschichtequiz.eml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/geschichtequiz2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/geschichtequiz2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/geschichtequiz3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/geschichtequiz3.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/style2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/style3.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/style3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/LogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LogHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Quizalt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Quizalt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/geschichtequiz2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/geschichtequiz2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/geschichtequiz3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/geschichtequiz3.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/log/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/quizalt.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/quizalt.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/quizalt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/quizalt.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/style2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/style3.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/style3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrong/wrongAnswers.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +84,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1XtYEKXZoWplC2uGU6zKElbgm38" />
@@ -113,10 +103,15 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/projekt-appsenzen-master/projekt-appsenzen-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -320,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588163014091</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="FileHandlerAlt zum einlesen der gemachten Quiz und ausgabe der gemachten Quiz">
+      <created>1588257342088</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1588257342088</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -356,6 +358,7 @@
     <MESSAGE value="Benutzeroberfläche für das Ergebnis des Quiz" />
     <MESSAGE value="Neues Themengebiete (Marokkokriese, Spanisch-Amerikanischerkrieg)" />
     <MESSAGE value="Löschen der QuizAttempts und funktion zum hinzufügen von Menuitems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Löschen der QuizAttempts und funktion zum hinzufügen von Menuitems" />
+    <MESSAGE value="FileHandlerAlt zum einlesen der gemachten Quiz und ausgabe der gemachten Quiz" />
+    <option name="LAST_COMMIT_MESSAGE" value="FileHandlerAlt zum einlesen der gemachten Quiz und ausgabe der gemachten Quiz" />
   </component>
 </project>

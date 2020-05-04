@@ -19,7 +19,6 @@ public class Controller3 {
     @FXML
     private MenuButton menu;
 
-
     @FXML
     void handleButtonAction(ActionEvent event) throws IOException {
         if (event.getSource() == zuruck) {
@@ -61,7 +60,16 @@ public class Controller3 {
 
     public void addMenuItem(String name){
         MenuItem m = new MenuItem(name);
-        menu.getItems().add(m);
+        menu.getItems().addAll(m);
+        m.setOnAction((actionEvent -> {
+            try {
+                handleItemAction(actionEvent);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }));
+
+
         System.out.println("Aufgerufen");
 
     }

@@ -73,10 +73,10 @@ public class Quizalt {
                 Stage stage2 = new Stage();
                 FXMLLoader fxmlloader = new FXMLLoader();
                 stage2.initStyle(StageStyle.UNDECORATED);
-                Pane root = fxmlloader.load(getClass().getResource("geschichtequiz2.fxml").openStream());
+                Pane root = fxmlloader.load(getClass().getResource("geschichtequiz3.fxml").openStream());
                 Scene scene = new Scene(root, 400, 600);
                 stage2.setScene(scene);
-                scene.getStylesheets().add(getClass().getResource("style2.css").toExternalForm());
+                scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
                 stage2.setResizable(false);
                 stage2.show();
                 stage1.close();
