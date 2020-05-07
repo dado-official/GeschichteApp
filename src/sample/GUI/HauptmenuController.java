@@ -1,6 +1,5 @@
-package sample;
+package sample.GUI;
 
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,7 +13,7 @@ import javafx.stage.StageStyle;
 import javax.swing.*;
 import java.io.IOException;
 
-public class Controller {
+public class HauptmenuController {
     @FXML
     private Button alt;
 
@@ -46,7 +45,7 @@ public class Controller {
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
             stage2.initStyle(StageStyle.UNDECORATED);
-            Pane root = fxmlloader.load(getClass().getResource("geschichtequiz2.fxml").openStream());
+            Pane root = fxmlloader.load(getClass().getResource("neuesQuiz.fxml").openStream());
             Scene scene = new Scene(root, 400, 600);
             stage2.setScene(scene);
             scene.getStylesheets().add(getClass().getResource("style2.css").toExternalForm());
@@ -60,7 +59,7 @@ public class Controller {
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
             stage2.initStyle(StageStyle.UNDECORATED);
-            Pane root = fxmlloader.load(getClass().getResource("geschichtequiz3.fxml").openStream());
+            Pane root = fxmlloader.load(getClass().getResource("alteQuiz.fxml").openStream());
             Scene scene = new Scene(root, 400, 600);
             stage2.setScene(scene);
             scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());

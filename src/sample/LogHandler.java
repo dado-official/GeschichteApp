@@ -2,14 +2,14 @@ package sample;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
+import sample.GUI.NeuesQuizController;
+import sample.GUI.AltesQuizController;
 
 import java.io.*;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 public class LogHandler {
     private File[] listOfFiles;
@@ -58,8 +58,8 @@ public class LogHandler {
                     Files.write(Paths.get("src/sample/log/log.txt"), addString.getBytes(), StandardOpenOption.APPEND);
                     System.out.println("new objekt added to log.txt --> " + f.getName());
                     FXMLLoader loader = new FXMLLoader();
-                    Pane root = loader.load(getClass().getResource("geschichtequiz2.fxml").openStream());
-                    Controller2 controller = loader.getController();
+                    Pane root = loader.load(getClass().getResource("GUI/neuesQuiz.fxml").openStream());
+                    NeuesQuizController controller = loader.getController();
                     controller.addthema(f.getName());
                     System.out.println("Hinzugefügt");
 
@@ -116,8 +116,8 @@ public class LogHandler {
         f.createNewFile();
         addAttempt(topic);
         FXMLLoader loader = new FXMLLoader();
-        Pane root = loader.load(getClass().getResource("geschichtequiz3.fxml").openStream());
-        Controller3 controller = loader.getController();
+        Pane root = loader.load(getClass().getResource("GUI/alteQuiz.fxml").openStream());
+        AltesQuizController controller = loader.getController();
         controller.addMenuItem(topic+getAttemptsNumber(topic));
         System.out.println("Hinzugefügt");
     }
@@ -136,7 +136,7 @@ public class LogHandler {
         }
     }
 
-    void writeClickedAnswer(String string, String topic){
+    public void writeClickedAnswer(String string, String topic){
         try {
             Files.write(Paths.get("src/sample/log/" + topic + (getAttemptsNumber(topic)-1) + ".txt"),
                     string.concat("\n").getBytes(), StandardOpenOption.APPEND);

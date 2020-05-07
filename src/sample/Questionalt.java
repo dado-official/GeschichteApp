@@ -18,10 +18,10 @@ public class Questionalt {
         i++;
     }
 
-    String getAnswers(int i) {
+    public String getAnswers(int i) {
         return answers[i];
     }
-    String getQuestion() {
+    public String getQuestion() {
         return question;
     }
 }

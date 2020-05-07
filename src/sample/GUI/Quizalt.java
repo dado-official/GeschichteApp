@@ -1,4 +1,4 @@
-package sample;
+package sample.GUI;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,10 +10,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import sample.FileHandlerAlt;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Random;
 
 public class Quizalt {
 
@@ -33,13 +32,11 @@ public class Quizalt {
 
     @FXML
     private Label frage;
-    private int rand_int1,counter;
-    int counter2=0;
-    String topic;
+    private int counter;
+    private int counter2=0;
+    private String topic;
 
     //ArrayList zum Speichern der bereits angezeigten Fragen
-
-    private FileHandlerAlt filehandler;
 
     void showQuestion(String chosenTopic) throws IOException {
         FileHandlerAlt fileHandler = new FileHandlerAlt(chosenTopic + ".txt");
@@ -73,7 +70,7 @@ public class Quizalt {
                 Stage stage2 = new Stage();
                 FXMLLoader fxmlloader = new FXMLLoader();
                 stage2.initStyle(StageStyle.UNDECORATED);
-                Pane root = fxmlloader.load(getClass().getResource("geschichtequiz3.fxml").openStream());
+                Pane root = fxmlloader.load(getClass().getResource("alteQuiz.fxml").openStream());
                 Scene scene = new Scene(root, 400, 600);
                 stage2.setScene(scene);
                 scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
@@ -97,7 +94,7 @@ public class Quizalt {
                 Stage stage2 = new Stage();
                 FXMLLoader fxmlloader = new FXMLLoader();
                 stage2.initStyle(StageStyle.UNDECORATED);
-                Pane root = fxmlloader.load(getClass().getResource("geschichtequiz3.fxml").openStream());
+                Pane root = fxmlloader.load(getClass().getResource("alteQuiz.fxml").openStream());
                 Scene scene = new Scene(root, 400, 600);
                 stage2.setScene(scene);
                 scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());

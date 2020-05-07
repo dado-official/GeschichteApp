@@ -1,4 +1,4 @@
-package sample;
+package sample.GUI;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -25,7 +25,7 @@ public class Workinprogress {
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
             stage2.initStyle(StageStyle.UNDECORATED);
-            Pane root = fxmlloader.load(getClass().getResource("geschichtequiz2.fxml").openStream());
+            Pane root = fxmlloader.load(getClass().getResource("neuesQuiz.fxml").openStream());
             Scene scene = new Scene(root, 400, 600);
             stage2.setScene(scene);
             scene.getStylesheets().add(getClass().getResource("style2.css").toExternalForm());

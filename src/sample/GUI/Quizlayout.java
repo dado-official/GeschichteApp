@@ -1,4 +1,4 @@
-package sample;
+package sample.GUI;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,6 +9,9 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import sample.FileHandler;
+import sample.Main;
+import sample.Question;
 
 
 import java.io.*;

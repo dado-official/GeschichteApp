@@ -7,7 +7,7 @@ public class FileHandlerAlt {
     private File file;
     public Questionalt[] questions;
 
-    FileHandlerAlt(String Filename) throws IOException {
+    public FileHandlerAlt(String Filename) throws IOException {
         this.file = new File("src/sample/log/"+ Filename);
         init();
     }
