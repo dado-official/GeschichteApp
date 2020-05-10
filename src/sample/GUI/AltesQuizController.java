@@ -1,4 +1,4 @@
-package sample;
+package sample.GUI;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,12 +13,11 @@ import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
-public class Controller3 {
+public class AltesQuizController {
     @FXML
     private Button zuruck;
     @FXML
     private MenuButton menu;
-
 
     @FXML
     void handleButtonAction(ActionEvent event) throws IOException {
@@ -28,7 +27,7 @@ public class Controller3 {
             Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
             stage2.initStyle(StageStyle.UNDECORATED);
-            Pane root = fxmlloader.load(getClass().getResource("geschichtequiz.fxml").openStream());
+            Pane root = fxmlloader.load(getClass().getResource("hauptmenu.fxml").openStream());
             Scene scene = new Scene(root, 400, 600);
             stage2.setScene(scene);
             scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
@@ -61,7 +60,16 @@ public class Controller3 {
 
     public void addMenuItem(String name){
         MenuItem m = new MenuItem(name);
-        menu.getItems().add(m);
+        menu.getItems().addAll(m);
+        m.setOnAction((actionEvent -> {
+            try {
+                handleItemAction(actionEvent);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }));
+
+
         System.out.println("Aufgerufen");
 
     }
