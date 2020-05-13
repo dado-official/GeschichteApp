@@ -54,7 +54,7 @@ public class NeuesQuizController {
             scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
             stage2.setResizable(false);
             Quizlayout controller = fxmlloader.<Quizlayout>getController();
-            controller.randomizeQuestion("Julikrise");
+            controller.randomizeQuestion("1 Weltkrieg 1914");
             stage2.show();
             stage1.close();
 

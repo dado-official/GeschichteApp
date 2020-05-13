@@ -20,7 +20,3 @@
 .menu-bar{
     -fx-background-color: derive(#778890, -30%);
 }
-
-.menu-item{
-    -fx-background-color: derive(#778899, -30%);
-}

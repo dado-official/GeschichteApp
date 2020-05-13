@@ -44,7 +44,7 @@
         </GridPane>
       </center>
       <top>
-        <Label alignment="CENTER" contentDisplay="CENTER" text="Ergebniss" BorderPane.alignment="CENTER">
+        <Label alignment="CENTER" contentDisplay="CENTER" text="Ergebnis" BorderPane.alignment="CENTER">
           <BorderPane.margin>
             <Insets top="50.0" />
           </BorderPane.margin>

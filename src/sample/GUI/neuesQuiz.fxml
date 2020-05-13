@@ -32,6 +32,7 @@
             <Button fx:id="letztefehler" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="200.0" text="Quiz mit den letzten Fehlern" GridPane.columnIndex="0" GridPane.rowIndex="1" />
             <MenuButton fx:id="themen" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Quiz zu bestimmten Thema" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
               <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleItemAction" text="1 Weltkrieg 1914"/>
                 <MenuItem mnemonicParsing="false" onAction="#handleItemAction" text="Julikrise"/>
                 <MenuItem mnemonicParsing="false" onAction="#handleItemAction" text="Balkankriege"/>
                 <MenuItem mnemonicParsing="false" onAction="#handleItemAction" text="Marokkokrisen"/>

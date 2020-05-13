@@ -31,12 +31,6 @@
           <children>
             <MenuButton fx:id="menu" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="200.0" text="Quiz auswählen" GridPane.columnIndex="0" GridPane.rowIndex="0">
               <items>
-                <MenuItem mnemonicParsing="false" text="Julikrise1" onAction="#handleItemAction"/>
-                <MenuItem mnemonicParsing="false" text="Julikrise2" onAction="#handleItemAction"/>
-                <MenuItem mnemonicParsing="false" text="Julikrise3" onAction="#handleItemAction"/>
-                <MenuItem mnemonicParsing="false" text="Julikrise4" onAction="#handleItemAction"/>
-                <MenuItem mnemonicParsing="false" text="Marokkokrisen1" onAction="#handleItemAction"/>
-                <MenuItem mnemonicParsing="false" text="wrongAnswers1" onAction="#handleItemAction"/>
               </items>
             </MenuButton>
           </children>

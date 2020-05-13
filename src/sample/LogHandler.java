@@ -2,8 +2,8 @@ package sample;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
-import sample.GUI.NeuesQuizController;
 import sample.GUI.AltesQuizController;
+import sample.GUI.NeuesQuizController;
 
 import java.io.*;
 import java.nio.file.Files;
