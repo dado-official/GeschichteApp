@@ -1,0 +1,34 @@
+.button{
+    -fx-background-color: lightsteelblue;
+    -fx-background-radius: 18px;
+    -fx-font-size: 20pt;
+    -fx-font-family: "Lato bold" "Calibri"
+}
+
+.button:hover{
+    -fx-background-color: derive(#778899, -30%);
+    -fx-text-fill: whitesmoke;
+}
+
+.root{
+    -fx-background-color: slategrey;
+}
+
+.label{
+    -fx-background-color: slategrey;
+    -fx-font-size: 16pt;
+    -fx-font-family: "Lato bold" "Calibri"
+}
+
+.right{
+     -fx-text-fill: green;
+     -fx-background-color: lightgreen;
+ }
+ .false{
+      -fx-text-fill: red;
+      -fx-background-color: lightpink;
+  }
+
+  .next{
+        -fx-font-size: 14pt;
+  }

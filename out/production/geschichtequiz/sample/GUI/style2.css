@@ -1,0 +1,27 @@
+.button{
+    -fx-background-color: lightsteelblue;
+    -fx-background-radius: 18px;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Lato bold" "Calibri"
+}
+
+.button:hover{
+    -fx-background-color: derive(#778899, -30%);
+    -fx-text-fill: whitesmoke;
+}
+
+
+.root{
+    -fx-background-color: slategrey;
+}
+
+.menu-button{
+    -fx-background-color: lightsteelblue;
+    -fx-background-radius: 18px;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Lato bold" "Calibri"
+}
+.menu-button:hover{
+    -fx-background-color: derive(#778899, -30%);
+    -fx-text-fill: whitesmoke;
+}

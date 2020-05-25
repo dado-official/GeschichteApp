@@ -1,0 +1,41 @@
+.button{
+    -fx-background-color: lightsteelblue;
+    -fx-background-radius: 18px;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Lato bold" "Calibri"
+}
+
+.button:hover{
+    -fx-background-color: derive(#778899, -30%);
+}
+
+.button:hover{
+    -fx-text-fill: whitesmoke;
+}
+
+.root{
+    -fx-background-color: slategrey;
+}
+
+.label{
+    -fx-background-color: slategrey;
+    -fx-font-size: 12pt;
+    -fx-font-family: "Lato bold" "Calibri"
+}
+
+.text-field{
+    -fx-background-color: lightsteelblue;
+    -fx-font-size: 18pt;
+    -fx-background-radius: 18px;
+    -fx-font-family: "Lato bold" "Calibri"
+}
+
+.right{
+     -fx-text-fill: green;
+     -fx-background-color: lightgreen;
+ }
+ .false{
+      -fx-text-fill: red;
+      -fx-background-color: lightpink;
+  }
+

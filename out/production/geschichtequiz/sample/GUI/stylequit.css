@@ -1,0 +1,25 @@
+.button{
+    -fx-background-color: lightsteelblue;
+    -fx-background-radius: 18px;
+    -fx-font-size: 20pt;
+    -fx-font-family: "Lato bold" "Calibri"
+}
+
+.button:hover{
+    -fx-background-color: derive(#778899, -30%);
+}
+
+.button:hover{
+    -fx-text-fill: whitesmoke;
+}
+
+.root{
+    -fx-background-color: slategrey;
+}
+
+.text-field{
+    -fx-font-size: 12pt;
+    -fx-background-color: slategrey;
+    -fx-font-family: "Lato bold" "Calibri"
+
+}
