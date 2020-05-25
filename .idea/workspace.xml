@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="geschichtequiz:jar" />
+      <artifact name="geschichtequiz" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="erweitern des Endberichts">
+      <change afterPath="$PROJECT_DIR$/.idea/GeschichteApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/geschichtequiz.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/geschichtequiz.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/geschichtequiz_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Endbericht.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Endbericht.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/LogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LogHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +94,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="geschichteapp" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -97,8 +107,9 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Themenbereiche" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/production/geschichtequiz" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -106,16 +117,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp" />
+      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\src\sample" />
+      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\out\production\geschichtequiz\sample" />
+      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\src\sample\allController" />
+      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\src\sample\fxml_files" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="sample" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\out\production\geschichtequiz" />
       <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\Themenbereiche" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\src\sample\allController" />
-      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\src\sample\fxml_files" />
-      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\src\sample\css_files" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -214,6 +228,7 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1590434919515" duration="8627000" />
     </task>
     <task id="LOCAL-00001" summary="Hinzufügen der Klasse Question">
       <created>1587462025162</created>
@@ -351,8 +366,8 @@
     <option name="localTasksCounter" value="20" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1302000" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
