@@ -7,8 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="erweitern des Endberichts">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/1 Weltkrieg 19141.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/1 Weltkrieg 19142.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/wrongAnswers1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jnlp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/geschichtequiz.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/geschichtequiz.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/geschichtequiz.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/geschichtequiz.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/geschichtequiz.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/geschichtequiz.jnlp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/LogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LogHandler.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +232,8 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1590434919515" duration="9469000" />
+      <workItem from="1590434919515" duration="10068000" />
+      <workItem from="1590487362777" duration="2452000" />
     </task>
     <task id="LOCAL-00001" summary="Hinzufügen der Klasse Question">
       <created>1587462025162</created>
@@ -398,5 +409,16 @@
     <MESSAGE value="Hinzufügen des Endberichts" />
     <MESSAGE value="Neues Thema 1. Weltkrieg 1914" />
     <option name="LAST_COMMIT_MESSAGE" value="Neues Thema 1. Weltkrieg 1914" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/LogHandler.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
