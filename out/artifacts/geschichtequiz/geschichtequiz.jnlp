@@ -8,8 +8,8 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="geschichtequiz.jar" size="40871" download="eager" />
+    <jar href="geschichtequiz.jar" size="40913" download="eager" />
   </resources>
-  <jfx:javafx-desc  width="600" height="400" main-class="sample.Main"  name="geschichtequiz" />
+  <jfx:javafx-desc  width="600" height="400" main-class="Main.java"  name="geschichtequiz" />
   <update check="background"/>
 </jnlp>
