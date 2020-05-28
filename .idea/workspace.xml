@@ -6,25 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Neues Thema 1. Weltkrieg 1915">
-      <change afterPath="$PROJECT_DIR$/Beta-Version/Themenbereiche/1 Weltkrieg 1914.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beta-Version/Themenbereiche/1 Weltkrieg 1915.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Balkankriege.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Julikrise.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Marokkokrisen.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Spanisch-Amerikanischerkrieg.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beta-Version/Themenbereiche/wrongAnswers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Beta-Version/log/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Themenbereiche/1 Weltkrieg 1915.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/1 Weltkrieg 19151.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Beta-Version">
+      <change afterPath="$PROJECT_DIR$/Beta-Version/GeschichteApp.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Beta-Version/GeschichteAppInstaller.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Beta-Version/geschichtequiz.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/1 Weltkrieg 19152.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/neuesQuiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/neuesQuiz.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/NeuesQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/NeuesQuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/Workinprogress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Workinprogress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/neuesQuiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/neuesQuiz.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +108,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Beta-Version" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -383,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590496288260</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Beta-Version">
+      <created>1590507306376</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1590507306376</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,6 +420,7 @@
     <MESSAGE value="Hinzufügen des Endberichts" />
     <MESSAGE value="Neues Thema 1. Weltkrieg 1914" />
     <MESSAGE value="Neues Thema 1. Weltkrieg 1915" />
-    <option name="LAST_COMMIT_MESSAGE" value="Neues Thema 1. Weltkrieg 1915" />
+    <MESSAGE value="Beta-Version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beta-Version" />
   </component>
 </project>
