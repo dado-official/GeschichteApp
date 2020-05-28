@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="hinzufügen der eschreibung" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="hinzufügen der Beschreibung" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,7 +378,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590689297127</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="hinzufügen der eschreibung">
+      <created>1590689433996</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1590689433996</updated>
+    </task>
+    <task id="LOCAL-00024" summary="hinzufügen der Beschreibung">
+      <created>1590689482596</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1590689482596</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,6 +435,7 @@
     <MESSAGE value="Neues Thema 1. Weltkrieg 1915" />
     <MESSAGE value="Beta-Version" />
     <MESSAGE value="hinzufügen der eschreibung" />
-    <option name="LAST_COMMIT_MESSAGE" value="hinzufügen der eschreibung" />
+    <MESSAGE value="hinzufügen der Beschreibung" />
+    <option name="LAST_COMMIT_MESSAGE" value="hinzufügen der Beschreibung" />
   </component>
 </project>
