@@ -58,11 +58,6 @@ public class LogHandler {
                     Files.write(Paths.get("log/log.txt"), addString.getBytes(), StandardOpenOption.APPEND);
                     System.out.println("new objekt added to log.txt --> " + f.getName());
                     FXMLLoader loader = new FXMLLoader();
-                    Pane root = loader.load(getClass().getResource("GUI/neuesQuiz.fxml").openStream());
-                    NeuesQuizController controller = loader.getController();
-                    controller.addthema(f.getName());
-                    System.out.println("Hinzugefügt");
-
                 }catch (IOException e) {
                     //exception handling left as an exercise for the reader
                     e.printStackTrace();
@@ -112,7 +107,7 @@ public class LogHandler {
     }
 
     public void newAttempt(String topic) throws IOException {
-        File f = new File("log/" + topic + getAttemptsNumber(topic) + ".txt");
+        File f = new File("Quiz/" + topic + getAttemptsNumber(topic) + ".txt");
         f.createNewFile();
         addAttempt(topic);
         FXMLLoader loader = new FXMLLoader();
@@ -125,7 +120,7 @@ public class LogHandler {
     public void writeQuestionAndAnswersToAttempt(Question question, String topic) throws IOException {
         //Frage mit Antworten in File schreiben
         try {
-            Files.write(Paths.get("log/" + topic + (getAttemptsNumber(topic)-1) + ".txt"),
+            Files.write(Paths.get("Quiz/" + topic + (getAttemptsNumber(topic)-1) + ".txt"),
                     question.getQuestion().concat("\n")
                             .concat(question.getAnswers(0).concat("\n")
                             .concat(question.getAnswers(1).concat("\n")
@@ -138,7 +133,7 @@ public class LogHandler {
 
     public void writeClickedAnswer(String string, String topic){
         try {
-            Files.write(Paths.get("log/" + topic + (getAttemptsNumber(topic)-1) + ".txt"),
+            Files.write(Paths.get("Quiz/" + topic + (getAttemptsNumber(topic)-1) + ".txt"),
                     string.concat("\n").getBytes(), StandardOpenOption.APPEND);
         }catch (IOException e) {
             //exception handling left as an exercise for the reader

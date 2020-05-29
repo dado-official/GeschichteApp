@@ -6,7 +6,30 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="hinzufügen der Beschreibung" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Installer für Vollversion 1.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/GeschichteApp.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/GeschichteAppInstaller.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Official-Version/GeschichteAppInstaller.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/ProgrammBeschreibung.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Official-Version/ProgrammBeschreibung.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/1 Weltkrieg 1914.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/1 Weltkrieg 1915.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Balkankriege.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Julikrise.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Marokkokrisen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Spanisch-Amerikanischerkrieg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/wrongAnswers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/geschichtequiz.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beta-Version/log/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/1 Weltkrieg 19151.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/1 Weltkrieg 19152.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Quiz/Example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FileHandlerAlt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FileHandlerAlt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/GUI/NeuesQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/NeuesQuizController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/GUI/Zusammenfassung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Zusammenfassung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/LogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LogHandler.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +131,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp" />
+      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\src\sample" />
+      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\out\production\geschichtequiz\sample" />
+      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\src\sample\allController" />
+      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\src\sample\fxml_files" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="sample" />
     </key>
@@ -116,13 +146,6 @@
       <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\out\artifacts\geschichtequiz_jar" />
       <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\out\production\geschichtequiz" />
       <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\Themenbereiche" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp" />
-      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\src\sample" />
-      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\out\production\geschichtequiz\sample" />
-      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\src\sample\allController" />
-      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\src\sample\fxml_files" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -371,28 +394,7 @@
       <option name="project" value="LOCAL" />
       <updated>1590507306376</updated>
     </task>
-    <task id="LOCAL-00022" summary="hinzufügen der eschreibung">
-      <created>1590689297127</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1590689297127</updated>
-    </task>
-    <task id="LOCAL-00023" summary="hinzufügen der eschreibung">
-      <created>1590689433996</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1590689433996</updated>
-    </task>
-    <task id="LOCAL-00024" summary="hinzufügen der Beschreibung">
-      <created>1590689482596</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1590689482596</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,8 +436,7 @@
     <MESSAGE value="Neues Thema 1. Weltkrieg 1914" />
     <MESSAGE value="Neues Thema 1. Weltkrieg 1915" />
     <MESSAGE value="Beta-Version" />
-    <MESSAGE value="hinzufügen der eschreibung" />
-    <MESSAGE value="hinzufügen der Beschreibung" />
-    <option name="LAST_COMMIT_MESSAGE" value="hinzufügen der Beschreibung" />
+    <MESSAGE value="Installer für Vollversion 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Installer für Vollversion 1.0" />
   </component>
 </project>

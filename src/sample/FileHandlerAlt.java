@@ -8,7 +8,7 @@ public class FileHandlerAlt {
     public Questionalt[] questions;
 
     public FileHandlerAlt(String Filename) throws IOException {
-        this.file = new File("src/sample/log/"+ Filename);
+        this.file = new File("Quiz/"+ Filename);
         init();
     }
 
