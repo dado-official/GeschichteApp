@@ -6,28 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Installer für Vollversion 1.0">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Vollversion 1.1 nur Code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/GeschichteApp.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/GeschichteAppInstaller.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Official-Version/GeschichteAppInstaller.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/ProgrammBeschreibung.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Official-Version/ProgrammBeschreibung.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/1 Weltkrieg 1914.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/1 Weltkrieg 1915.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Balkankriege.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Julikrise.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Marokkokrisen.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/Spanisch-Amerikanischerkrieg.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/Themenbereiche/wrongAnswers.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/geschichtequiz.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beta-Version/log/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quiz/Example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Themenbereiche/1 Weltkrieg 1914.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/1 Weltkrieg 1914.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Themenbereiche/1 Weltkrieg 1915.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/1 Weltkrieg 1915.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/1 Weltkrieg 19151.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/1 Weltkrieg 19152.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Quiz/Example.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FileHandlerAlt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FileHandlerAlt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/alteQuiz.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/neuesQuiz.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/GUI/AltesQuizController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/NeuesQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/NeuesQuizController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/GUI/NeuesQuizController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/GUI/Quizalt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Quizalt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/GUI/Zusammenfassung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Zusammenfassung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/GUI/alteQuiz.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/GUI/neuesQuiz.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/LogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LogHandler.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,12 +118,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/JavaFX_Schularbeit2_Hofer_Sebastian" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -394,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590507306376</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Installer für Vollversion 1.0">
+      <created>1590783769261</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1590783769261</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,6 +439,7 @@
     <MESSAGE value="Neues Thema 1. Weltkrieg 1915" />
     <MESSAGE value="Beta-Version" />
     <MESSAGE value="Installer für Vollversion 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installer für Vollversion 1.0" />
+    <MESSAGE value="Vollversion 1.1 nur Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vollversion 1.1 nur Code" />
   </component>
 </project>

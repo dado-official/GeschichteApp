@@ -1,9 +1,6 @@
 package sample;
 
 import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.Pane;
-import sample.GUI.AltesQuizController;
-import sample.GUI.NeuesQuizController;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -110,11 +107,6 @@ public class LogHandler {
         File f = new File("Quiz/" + topic + getAttemptsNumber(topic) + ".txt");
         f.createNewFile();
         addAttempt(topic);
-        FXMLLoader loader = new FXMLLoader();
-        Pane root = loader.load(getClass().getResource("GUI/alteQuiz.fxml").openStream());
-        AltesQuizController controller = loader.getController();
-        controller.addMenuItem(topic+getAttemptsNumber(topic));
-        System.out.println("Hinzugefügt");
     }
 
     public void writeQuestionAndAnswersToAttempt(Question question, String topic) throws IOException {

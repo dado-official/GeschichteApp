@@ -26,6 +26,7 @@ public class FileHandler {
             System.out.println("Error: File not found");
         }
 
+        assert buf != null;
         String line = buf.readLine();
         StringBuilder sb = new StringBuilder();
 

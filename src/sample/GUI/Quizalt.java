@@ -1,20 +1,27 @@
 package sample.GUI;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import sample.FileHandlerAlt;
 
+import javax.swing.*;
+import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Quizalt {
+    private File[] listOfFiles;
 
     @FXML
     private Button weiter;
@@ -66,17 +73,114 @@ public class Quizalt {
     private void handleButtonAction(ActionEvent event) throws IOException {
         if (event.getSource() == zuruck) {
             if(counter2==0){
-                Stage stage1 = (Stage) zuruck.getScene().getWindow();
-                Stage stage2 = new Stage();
-                FXMLLoader fxmlloader = new FXMLLoader();
-                stage2.initStyle(StageStyle.UNDECORATED);
-                Pane root = fxmlloader.load(getClass().getResource("alteQuiz.fxml").openStream());
-                Scene scene = new Scene(root, 400, 600);
-                stage2.setScene(scene);
-                scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
-                stage2.setResizable(false);
-                stage2.show();
-                stage1.close();
+                File folder = new File("Quiz");
+                listOfFiles = folder.listFiles();
+                if(listOfFiles == null || listOfFiles.length==0){
+                    JOptionPane.showMessageDialog(null,"Noch keine Quiz gemacht");
+                } else {
+                    Stage stage1 = (Stage) weiter.getScene().getWindow();
+                    Stage stage2 = new Stage();
+                    stage2.initStyle(StageStyle.UNDECORATED);
+                    MenuButton altequiz = new MenuButton("Altes Quiz auswaehlen");
+                    altequiz.setPrefSize(200, 50);
+                    //i = anzahl der Themebereiche
+
+                    assert listOfFiles != null;
+                    System.out.println(listOfFiles[0].getName());
+
+
+                    System.out.println(Arrays.toString(listOfFiles));
+                    MenuItem[] items = new MenuItem[listOfFiles.length];
+
+                    for (int i = 0; i < listOfFiles.length; i++) {
+                        System.out.println(listOfFiles[i].getName());
+                        String tmp = listOfFiles[i].getName();
+                        String[] strarr = tmp.split(".txt");
+                        items[i] = new MenuItem(strarr[0]);
+
+                        items[i].setOnAction(new EventHandler<ActionEvent>() {
+                            @Override
+                            public void handle(ActionEvent event) {
+                                MenuItem clickedMenuItem = (MenuItem) event.getTarget();
+                                String buttonlabel = clickedMenuItem.getText();
+
+                                File f = new File("Themenbereiche");
+
+
+                                String chosenTopic = buttonlabel;
+                                try {
+                                    FileHandlerAlt fileHandler = new FileHandlerAlt(chosenTopic + ".txt");
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+
+                                Stage stage1 = (Stage) altequiz.getScene().getWindow();
+                                Stage stage2 = new Stage();
+                                FXMLLoader fxmlloader = new FXMLLoader();
+                                stage2.initStyle(StageStyle.UNDECORATED);
+                                Pane root = null;
+                                try {
+                                    root = fxmlloader.load(getClass().getResource("quizalt.fxml").openStream());
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                                Scene scene = new Scene(root, 400, 600);
+                                stage2.setScene(scene);
+                                scene.getStylesheets().add(getClass().getResource("quizalt.css").toExternalForm());
+                                stage2.setResizable(false);
+                                stage2.show();
+                                stage1.close();
+                                Quizalt controller = fxmlloader.getController();
+                                try {
+                                    controller.showQuestion(chosenTopic);
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+
+                        });
+
+
+                    }
+                    altequiz.getItems().addAll(items);
+                    Button zuruck = new Button("zurück");
+                    zuruck.setOnAction(new EventHandler<ActionEvent>() {
+                        @Override
+                        public void handle(ActionEvent event) {
+                            Stage stage1 = (Stage) zuruck.getScene().getWindow();
+
+                            Stage stage2 = new Stage();
+                            FXMLLoader fxmlloader = new FXMLLoader();
+                            stage2.initStyle(StageStyle.UNDECORATED);
+                            Pane root = null;
+                            try {
+                                root = fxmlloader.load(getClass().getResource("hauptmenu.fxml").openStream());
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                            Scene scene = new Scene(root, 400, 600);
+                            stage2.setScene(scene);
+                            scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+                            stage2.setResizable(false);
+                            stage2.show();
+                            stage1.close();
+                        }
+                    });
+                    zuruck.setPrefSize(100, 25);
+                    GridPane tabel = new GridPane();
+                    tabel.add(altequiz, 0, 0);
+                    tabel.setAlignment(Pos.CENTER);
+                    BorderPane root = new BorderPane();
+                    root.setCenter(tabel);
+                    root.setBottom(zuruck);
+                    root.setPadding(new Insets(0, 0, 25, 25));
+                    Scene scene = new Scene(root, 400, 600);
+                    stage2.setScene(scene);
+                    scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
+                    stage2.setResizable(false);
+                    stage2.show();
+                    stage1.hide();
+                }
             } else{
                 counter2--;
                 counter--;
@@ -89,18 +193,114 @@ public class Quizalt {
             ++counter;
             ++counter2;
             if (counter == 10){
-                Stage stage1 = (Stage) frage.getScene().getWindow();
+                File folder = new File("Quiz");
+                listOfFiles = folder.listFiles();
+                if(listOfFiles == null || listOfFiles.length==0){
+                    JOptionPane.showMessageDialog(null,"Noch keine Quiz gemacht");
+                } else {
+                    Stage stage1 = (Stage) weiter.getScene().getWindow();
+                    Stage stage2 = new Stage();
+                    stage2.initStyle(StageStyle.UNDECORATED);
+                    MenuButton altequiz = new MenuButton("Altes Quiz auswaehlen");
+                    altequiz.setPrefSize(200, 50);
+                    //i = anzahl der Themebereiche
 
-                Stage stage2 = new Stage();
-                FXMLLoader fxmlloader = new FXMLLoader();
-                stage2.initStyle(StageStyle.UNDECORATED);
-                Pane root = fxmlloader.load(getClass().getResource("alteQuiz.fxml").openStream());
-                Scene scene = new Scene(root, 400, 600);
-                stage2.setScene(scene);
-                scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
-                stage2.setResizable(false);
-                stage2.show();
-                stage1.close();
+                    assert listOfFiles != null;
+                    System.out.println(listOfFiles[0].getName());
+
+
+                    System.out.println(Arrays.toString(listOfFiles));
+                    MenuItem[] items = new MenuItem[listOfFiles.length];
+
+                    for (int i = 0; i < listOfFiles.length; i++) {
+                        System.out.println(listOfFiles[i].getName());
+                        String tmp = listOfFiles[i].getName();
+                        String[] strarr = tmp.split(".txt");
+                        items[i] = new MenuItem(strarr[0]);
+
+                        items[i].setOnAction(new EventHandler<ActionEvent>() {
+                            @Override
+                            public void handle(ActionEvent event) {
+                                MenuItem clickedMenuItem = (MenuItem) event.getTarget();
+                                String buttonlabel = clickedMenuItem.getText();
+
+                                File f = new File("Themenbereiche");
+
+
+                                String chosenTopic = buttonlabel;
+                                try {
+                                    FileHandlerAlt fileHandler = new FileHandlerAlt(chosenTopic + ".txt");
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+
+                                Stage stage1 = (Stage) altequiz.getScene().getWindow();
+                                Stage stage2 = new Stage();
+                                FXMLLoader fxmlloader = new FXMLLoader();
+                                stage2.initStyle(StageStyle.UNDECORATED);
+                                Pane root = null;
+                                try {
+                                    root = fxmlloader.load(getClass().getResource("quizalt.fxml").openStream());
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                                Scene scene = new Scene(root, 400, 600);
+                                stage2.setScene(scene);
+                                scene.getStylesheets().add(getClass().getResource("quizalt.css").toExternalForm());
+                                stage2.setResizable(false);
+                                stage2.show();
+                                stage1.close();
+                                Quizalt controller = fxmlloader.getController();
+                                try {
+                                    controller.showQuestion(chosenTopic);
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+
+                        });
+
+
+                    }
+                    altequiz.getItems().addAll(items);
+                    Button zuruck = new Button("zurück");
+                    zuruck.setOnAction(new EventHandler<ActionEvent>() {
+                        @Override
+                        public void handle(ActionEvent event) {
+                            Stage stage1 = (Stage) zuruck.getScene().getWindow();
+
+                            Stage stage2 = new Stage();
+                            FXMLLoader fxmlloader = new FXMLLoader();
+                            stage2.initStyle(StageStyle.UNDECORATED);
+                            Pane root = null;
+                            try {
+                                root = fxmlloader.load(getClass().getResource("hauptmenu.fxml").openStream());
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                            Scene scene = new Scene(root, 400, 600);
+                            stage2.setScene(scene);
+                            scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+                            stage2.setResizable(false);
+                            stage2.show();
+                            stage1.close();
+                        }
+                    });
+                    zuruck.setPrefSize(100, 25);
+                    GridPane tabel = new GridPane();
+                    tabel.add(altequiz, 0, 0);
+                    tabel.setAlignment(Pos.CENTER);
+                    BorderPane root = new BorderPane();
+                    root.setCenter(tabel);
+                    root.setBottom(zuruck);
+                    root.setPadding(new Insets(0, 0, 25, 25));
+                    Scene scene = new Scene(root, 400, 600);
+                    stage2.setScene(scene);
+                    scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
+                    stage2.setResizable(false);
+                    stage2.show();
+                    stage1.hide();
+                }
             } else {
                 resettextfields();
                 showQuestion(topic);

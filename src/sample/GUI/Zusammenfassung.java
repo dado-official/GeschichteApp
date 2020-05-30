@@ -18,10 +18,14 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import sample.FileHandler;
 
+import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Arrays;
 
 public class Zusammenfassung {
@@ -72,8 +76,15 @@ public class Zusammenfassung {
                 stage2.show();
                 stage1.close();
                 Quizlayout controller = fxmlloader.<Quizlayout>getController();
+                String tmp = null;
                 try {
-                    controller.randomizeQuestion("1 Weltkrieg 1915");
+                    tmp = getLatestFilefromDir().getName();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                String[] tmpstr = tmp.split(".txt");
+                try {
+                    controller.randomizeQuestion(tmpstr[0]);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -85,29 +96,40 @@ public class Zusammenfassung {
         fehler.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                Stage stage1 = (Stage) fehler.getScene().getWindow();
+                int count = 0;
+                try {
+                    count = countlines();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                if(count>=41){
+                    Stage stage1 = (Stage) fehler.getScene().getWindow();
 
-                Stage stage2 = new Stage();
-                FXMLLoader fxmlloader = new FXMLLoader();
-                stage2.initStyle(StageStyle.UNDECORATED);
-                Pane root = null;
-                try {
-                    root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
-                } catch (IOException e) {
-                    e.printStackTrace();
+                    Stage stage2 = new Stage();
+                    FXMLLoader fxmlloader = new FXMLLoader();
+                    stage2.initStyle(StageStyle.UNDECORATED);
+                    Pane root = null;
+                    try {
+                        root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    Scene scene = new Scene(root, 400, 600);
+                    stage2.setScene(scene);
+                    scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
+                    stage2.setResizable(false);
+                    stage2.show();
+                    stage1.close();
+                    Quizlayout controller = fxmlloader.<Quizlayout>getController();
+                    try {
+                        controller.randomizeQuestion("wrongAnswers");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }else{
+                    JOptionPane.showMessageDialog(null, "Noch nicht genügend Fehler");
                 }
-                Scene scene = new Scene(root, 400, 600);
-                stage2.setScene(scene);
-                scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
-                stage2.setResizable(false);
-                stage2.show();
-                stage1.close();
-                Quizlayout controller = fxmlloader.<Quizlayout>getController();
-                try {
-                    controller.randomizeQuestion("wrongAnswers");
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+
             }
         });
         Button zuruck = new Button("Zurück");
@@ -216,5 +238,36 @@ public class Zusammenfassung {
     public void showLabelContext(int richtig, int falsch){
         right.setText(String.valueOf(richtig));
         wrong.setText(String.valueOf(falsch));
+    }
+
+    private int countlines() throws IOException {
+        int count=0;
+        File wrong = new File("Themenbereiche/wrongAnswers.txt");
+        BufferedReader in = new BufferedReader(new FileReader(wrong));
+        while (in.readLine() != null) {
+            ++count;
+        }
+        return count;
+    }
+
+    private File getLatestFilefromDir() throws IOException {
+        File dir = new File("Themenbereiche");
+        File[] files=dir.listFiles();
+        if(files == null || files.length==0){
+            return null;
+        }
+        File lastcreatedfile = files[0];
+        Path path = lastcreatedfile.toPath();
+        BasicFileAttributes fatr= Files.readAttributes(path, BasicFileAttributes.class);
+        for(int i =1;i<files.length;i++){
+            Path path1 = files[i].toPath();
+            path = lastcreatedfile.toPath();
+            fatr= Files.readAttributes(path, BasicFileAttributes.class);
+            BasicFileAttributes fatr1= Files.readAttributes(path1, BasicFileAttributes.class);
+            if(fatr.creationTime().compareTo(fatr1.creationTime())<0){
+                lastcreatedfile=files[i];
+            }
+        }
+        return lastcreatedfile;
     }
 }

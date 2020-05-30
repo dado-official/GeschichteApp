@@ -19,10 +19,10 @@ import sample.FileHandler;
 import sample.FileHandlerAlt;
 
 import javax.swing.*;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Arrays;
 
 public class HauptmenuController {
@@ -86,8 +86,15 @@ public class HauptmenuController {
                     stage2.show();
                     stage1.close();
                     Quizlayout controller = fxmlloader.<Quizlayout>getController();
+                    String tmp = null;
                     try {
-                        controller.randomizeQuestion("1 Weltkrieg 1915");
+                        tmp = getLatestFilefromDir().getName();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    String[] tmpstr = tmp.split(".txt");
+                    try {
+                        controller.randomizeQuestion(tmpstr[0]);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -99,29 +106,40 @@ public class HauptmenuController {
             fehler.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
-                    Stage stage1 = (Stage) fehler.getScene().getWindow();
+                    int count = 0;
+                    try {
+                        count = countlines();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    if(count>=41){
+                        Stage stage1 = (Stage) fehler.getScene().getWindow();
 
-                    Stage stage2 = new Stage();
-                    FXMLLoader fxmlloader = new FXMLLoader();
-                    stage2.initStyle(StageStyle.UNDECORATED);
-                    Pane root = null;
-                    try {
-                        root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                        Stage stage2 = new Stage();
+                        FXMLLoader fxmlloader = new FXMLLoader();
+                        stage2.initStyle(StageStyle.UNDECORATED);
+                        Pane root = null;
+                        try {
+                            root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        Scene scene = new Scene(root, 400, 600);
+                        stage2.setScene(scene);
+                        scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
+                        stage2.setResizable(false);
+                        stage2.show();
+                        stage1.close();
+                        Quizlayout controller = fxmlloader.<Quizlayout>getController();
+                        try {
+                            controller.randomizeQuestion("wrongAnswers");
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }else{
+                        JOptionPane.showMessageDialog(null, "Noch nicht genügend Fehler");
                     }
-                    Scene scene = new Scene(root, 400, 600);
-                    stage2.setScene(scene);
-                    scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
-                    stage2.setResizable(false);
-                    stage2.show();
-                    stage1.close();
-                    Quizlayout controller = fxmlloader.<Quizlayout>getController();
-                    try {
-                        controller.randomizeQuestion("wrongAnswers");
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+
                 }
             });
             Button zuruck = new Button("Zurück");
@@ -227,26 +245,29 @@ public class HauptmenuController {
             stage1.close();
 
         } else if(event.getSource() == alt){
-            Stage stage1 = (Stage) neu.getScene().getWindow();
-            Stage stage2 = new Stage();
-            stage2.initStyle(StageStyle.UNDECORATED);
-            MenuButton altequiz = new MenuButton("Altes Quiz auswaehlen");
-            altequiz.setPrefSize(200,50);
-            //i = anzahl der Themebereiche
             File folder = new File("Quiz");
             listOfFiles = folder.listFiles();
-            assert listOfFiles != null;
-            System.out.println(listOfFiles[0].getName());
+            if(listOfFiles == null || listOfFiles.length==0){
+                JOptionPane.showMessageDialog(null,"Noch keine Quiz gemacht");
+            } else {
+                Stage stage1 = (Stage) neu.getScene().getWindow();
+                Stage stage2 = new Stage();
+                stage2.initStyle(StageStyle.UNDECORATED);
+                MenuButton altequiz = new MenuButton("Altes Quiz auswaehlen");
+                altequiz.setPrefSize(200, 50);
+                //i = anzahl der Themebereiche
+
+                assert listOfFiles != null;
+                System.out.println(listOfFiles[0].getName());
 
 
+                System.out.println(Arrays.toString(listOfFiles));
+                MenuItem[] items = new MenuItem[listOfFiles.length];
 
-            System.out.println(Arrays.toString(listOfFiles));
-            MenuItem[] items = new MenuItem[listOfFiles.length];
-
-            for (int i = 0; i < listOfFiles.length; i++) {
-                System.out.println(listOfFiles[i].getName());
-                String tmp = listOfFiles[i].getName();
-                String[] strarr=tmp.split(".txt");
+                for (int i = 0; i < listOfFiles.length; i++) {
+                    System.out.println(listOfFiles[i].getName());
+                    String tmp = listOfFiles[i].getName();
+                    String[] strarr = tmp.split(".txt");
                     items[i] = new MenuItem(strarr[0]);
 
                     items[i].setOnAction(new EventHandler<ActionEvent>() {
@@ -291,45 +312,47 @@ public class HauptmenuController {
 
                     });
 
-            }
-            altequiz.getItems().addAll(items);
-            Button zuruck = new Button("zurück");
-            zuruck.setOnAction(new EventHandler<ActionEvent>() {
-                @Override
-                public void handle(ActionEvent event) {
-                    Stage stage1 = (Stage) zuruck.getScene().getWindow();
 
-                    Stage stage2 = new Stage();
-                    FXMLLoader fxmlloader = new FXMLLoader();
-                    stage2.initStyle(StageStyle.UNDECORATED);
-                    Pane root = null;
-                    try {
-                        root = fxmlloader.load(getClass().getResource("hauptmenu.fxml").openStream());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    Scene scene = new Scene(root, 400, 600);
-                    stage2.setScene(scene);
-                    scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
-                    stage2.setResizable(false);
-                    stage2.show();
-                    stage1.close();
                 }
-            });
-            zuruck.setPrefSize(100,25);
-            GridPane tabel = new GridPane();
-            tabel.add(altequiz,0,0);
-            tabel.setAlignment(Pos.CENTER);
-            BorderPane root = new BorderPane();
-            root.setCenter(tabel);
-            root.setBottom(zuruck);
-            root.setPadding(new Insets(0,0,25,25));
-            Scene scene = new Scene(root, 400, 600);
-            stage2.setScene(scene);
-            scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
-            stage2.setResizable(false);
-            stage2.show();
-            stage1.hide();
+                altequiz.getItems().addAll(items);
+                Button zuruck = new Button("zurück");
+                zuruck.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        Stage stage1 = (Stage) zuruck.getScene().getWindow();
+
+                        Stage stage2 = new Stage();
+                        FXMLLoader fxmlloader = new FXMLLoader();
+                        stage2.initStyle(StageStyle.UNDECORATED);
+                        Pane root = null;
+                        try {
+                            root = fxmlloader.load(getClass().getResource("hauptmenu.fxml").openStream());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        Scene scene = new Scene(root, 400, 600);
+                        stage2.setScene(scene);
+                        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+                        stage2.setResizable(false);
+                        stage2.show();
+                        stage1.close();
+                    }
+                });
+                zuruck.setPrefSize(100, 25);
+                GridPane tabel = new GridPane();
+                tabel.add(altequiz, 0, 0);
+                tabel.setAlignment(Pos.CENTER);
+                BorderPane root = new BorderPane();
+                root.setCenter(tabel);
+                root.setBottom(zuruck);
+                root.setPadding(new Insets(0, 0, 25, 25));
+                Scene scene = new Scene(root, 400, 600);
+                stage2.setScene(scene);
+                scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
+                stage2.setResizable(false);
+                stage2.show();
+                stage1.hide();
+            }
         }
     }
 
@@ -342,5 +365,35 @@ public class HauptmenuController {
         if("Infos".equals(menuLabel)){
             JOptionPane.showMessageDialog(null,"Programmiert von Daniel Nagler, Silas Keim, Sebastian Hofer\n" + "Im Auftrag von Meinhard Mair","Infos", JOptionPane.PLAIN_MESSAGE);
         }
+    }
+
+    private File getLatestFilefromDir() throws IOException {
+        File dir = new File("Themenbereiche");
+        File[] files=dir.listFiles();
+        if(files == null || files.length==0){
+            return null;
+        }
+        File lastcreatedfile = files[0];
+        Path path = lastcreatedfile.toPath();
+        BasicFileAttributes fatr= Files.readAttributes(path, BasicFileAttributes.class);
+        for(int i =1;i<files.length;i++){
+            Path path1 = files[i].toPath();
+            path = lastcreatedfile.toPath();
+            fatr= Files.readAttributes(path, BasicFileAttributes.class);
+            BasicFileAttributes fatr1= Files.readAttributes(path1, BasicFileAttributes.class);
+            if(fatr.creationTime().compareTo(fatr1.creationTime())<0){
+                    lastcreatedfile=files[i];
+            }
+        }
+        return lastcreatedfile;
+    }
+    private int countlines() throws IOException {
+        int count=0;
+        File wrong = new File("Themenbereiche/wrongAnswers.txt");
+        BufferedReader in = new BufferedReader(new FileReader(wrong));
+        while (in.readLine() != null) {
+            ++count;
+        }
+        return count;
     }
 }
