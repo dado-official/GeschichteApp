@@ -1,7 +1,7 @@
 .button{
     -fx-background-color: lightsteelblue;
     -fx-background-radius: 18px;
-    -fx-font-size: 20pt;
+    -fx-font-size: 16pt;
     -fx-font-family: "Lato bold" "Calibri"
 }
 

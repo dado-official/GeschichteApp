@@ -7,23 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Vollversion 1.1 nur Code">
+      <change afterPath="$PROJECT_DIR$/Official-Version/GeschichteApp.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Official-Version/Themenbereiche/1 Weltkrieg 1914.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Official-Version/Themenbereiche/1 Weltkrieg 1915.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Official-Version/Themenbereiche/Balkankriege.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Official-Version/Themenbereiche/Julikrise.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Official-Version/Themenbereiche/Marokkokrisen.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Official-Version/Themenbereiche/Spanisch-Amerikanischerkrieg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Official-Version/Themenbereiche/wrongAnswers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Official-Version/geschichtequiz.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Official-Version/log/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quiz/1 Weltkrieg 19153.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quiz/Spanisch-Amerikanischerkrieg1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quiz/Spanisch-Amerikanischerkrieg2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quiz/Example.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Themenbereiche/1 Weltkrieg 1914.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/1 Weltkrieg 1914.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Themenbereiche/1 Weltkrieg 1915.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/1 Weltkrieg 1915.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Official-Version/GeschichteAppInstaller.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Official-Version/ProgrammBeschreibung.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Official-Version/ProgrammBeschreibung.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/alteQuiz.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/neuesQuiz.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/AltesQuizController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/quizstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/quizstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/NeuesQuizController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/Quizalt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Quizalt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/Zusammenfassung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Zusammenfassung.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/alteQuiz.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/neuesQuiz.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/LogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LogHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/GUI/quizstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/quizstyle.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +122,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/JavaFX_Schularbeit2_Hofer_Sebastian" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Official-Version" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -126,21 +130,22 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="sample" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\Official-Version" />
+      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\Beta-Version" />
+      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\out\artifacts\geschichtequiz_jar" />
+      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\out\production\geschichtequiz" />
+      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\Themenbereiche" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp" />
       <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\src\sample" />
       <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\out\production\geschichtequiz\sample" />
       <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\src\sample\allController" />
       <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\src\sample\fxml_files" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="sample" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\Beta-Version" />
-      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\out\artifacts\geschichtequiz_jar" />
-      <recent name="C:\Users\teraiulr\IntelliJ\GeschichteApp\out\production\geschichtequiz" />
-      <recent name="C:\Users\Sebastian Hofer\Desktop\repository\GeschichteApp\Themenbereiche" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -396,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590783769261</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Vollversion 1.1 nur Code">
+      <created>1590860987940</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1590860987940</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

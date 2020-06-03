@@ -1,0 +1,7 @@
+1 Weltkrieg 1914;1
+Balkankriege;1
+Julikrise;1
+Marokkokrisen;1
+Spanisch-Amerikanischerkrieg;1
+wrongAnswers;1
+1 Weltkrieg 1915;1
