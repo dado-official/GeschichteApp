@@ -3,4 +3,5 @@ Balkankriege;1
 Julikrise;1
 Marokkokrisen;1
 Spanisch-Amerikanischerkrieg;1
-wrongAnswers;1
+wrongAnswers;3
+1 Weltkrieg 1915;1
