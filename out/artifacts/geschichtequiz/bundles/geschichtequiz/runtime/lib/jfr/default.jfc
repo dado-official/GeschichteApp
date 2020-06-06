@@ -544,26 +544,6 @@
       <setting name="period">1000 ms</setting>
     </event>
 
-    <event path="java/security_property">
-      <setting name="enabled">false</setting>
-      <setting name="stackTrace">true</setting>
-    </event>
-
-    <event path="java/tls_handshake">
-      <setting name="enabled">false</setting>
-      <setting name="stackTrace">true</setting>
-    </event>
-
-    <event path="java/x509_certificate">
-      <setting name="enabled">false</setting>
-      <setting name="stackTrace">true</setting>
-    </event>
-
-    <event path="java/x509_validation">
-      <setting name="enabled">false</setting>
-      <setting name="stackTrace">true</setting>
-    </event>
-
   </producer>
 
   <producer uri="http://www.oracle.com/hotspot/jfr-info/" label="Oracle JDK">

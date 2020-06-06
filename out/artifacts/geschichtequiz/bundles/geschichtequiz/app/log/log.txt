@@ -1,4 +1,4 @@
-1 Weltkrieg 1914;1
+1 Weltkrieg 1914;2
 Balkankriege;1
 Julikrise;1
 Marokkokrisen;1
