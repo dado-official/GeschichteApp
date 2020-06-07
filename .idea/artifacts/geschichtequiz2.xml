@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="geschichtequiz2">
+    <output-path>$PROJECT_DIR$/out/artifacts/geschichtequiz2</output-path>
+    <root id="root">
+      <element id="archive" name="geschichtequiz.jar">
+        <element id="module-output" name="geschichtequiz" />
+      </element>
+    </root>
+  </artifact>
+</component>
