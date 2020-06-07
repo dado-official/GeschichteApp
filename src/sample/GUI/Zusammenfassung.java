@@ -51,31 +51,12 @@ public class Zusammenfassung {
         MenuItem[] items = new MenuItem[listOfFiles.length];
 
         Stage stage2 = new Stage();
-        FXMLLoader fxmlloader = new FXMLLoader();
         stage2.initStyle(StageStyle.UNDECORATED);
         Button aktuellesthema = new Button("Aktuelles Thema");
         aktuellesthema.setPrefSize(200,50);
         aktuellesthema.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                Stage stage1 = (Stage) aktuellesthema.getScene().getWindow();
-
-                Stage stage2 = new Stage();
-                FXMLLoader fxmlloader = new FXMLLoader();
-                stage2.initStyle(StageStyle.UNDECORATED);
-                Pane root = null;
-                try {
-                    root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                Scene scene = new Scene(root, 400, 600);
-                stage2.setScene(scene);
-                scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
-                stage2.setResizable(false);
-                stage2.show();
-                stage1.close();
-                Quizlayout controller = fxmlloader.<Quizlayout>getController();
                 String tmp = null;
                 try {
                     tmp = getLatestFilefromDir().getName();
@@ -83,12 +64,63 @@ public class Zusammenfassung {
                     e.printStackTrace();
                 }
                 String[] tmpstr = tmp.split(".txt");
+                int count = 0;
+
                 try {
-                    controller.randomizeQuestion(tmpstr[0]);
+                    if(tmpstr[0].equals("wrongAnswers"))
+                        count = countlines("1 Weltkrieg 1915");
+                    else{
+                        count = countlines(tmpstr[0]);
+                    }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
+                if(count>=40){
+                    Stage stage1 = (Stage) aktuellesthema.getScene().getWindow();
+
+                    Stage stage2 = new Stage();
+                    FXMLLoader fxmlloader = new FXMLLoader();
+                    stage2.initStyle(StageStyle.UNDECORATED);
+                    Pane root = null;
+                    try {
+                        root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    Scene scene = new Scene(root, 400, 600);
+                    stage2.setScene(scene);
+                    scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
+                    stage2.setResizable(false);
+                    stage2.show();
+                    stage1.close();
+                    Quizlayout controller = fxmlloader.<Quizlayout>getController();
+                    tmp = null;
+                    try {
+                        tmp = getLatestFilefromDir().getName();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    tmpstr = tmp.split(".txt");
+
+                    try {
+                        if(tmpstr[0].equals("wrongAnswers"))
+                            controller.randomizeQuestion("1 Weltkrieg 1915");
+                        else{
+                            controller.randomizeQuestion(tmpstr[0]);
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }else{
+                    JOptionPane.showMessageDialog(null, "Nicht genügend Fragen");
+                }
+
             }
+
+
+
+
 
         });
         Button fehler = new Button("Quiz mit letzten Fehler");
@@ -98,11 +130,11 @@ public class Zusammenfassung {
             public void handle(ActionEvent event) {
                 int count = 0;
                 try {
-                    count = countlines();
+                    count = countlines("wrongAnswers");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                if(count>=41){
+                if(count>=40){
                     Stage stage1 = (Stage) fehler.getScene().getWindow();
 
                     Stage stage2 = new Stage();
@@ -166,11 +198,9 @@ public class Zusammenfassung {
         String[] line = new String[listOfFiles.length];
 
         for (int i = 0; i < listOfFiles.length; i++) {
-            String tmp;
-            line[i] = bufferedReader.readLine();
-            tmp = line[i];
-            String[] tmpstr= tmp.split(";");
-            items[i]=new MenuItem(tmpstr[0]);
+            String tmp = listOfFiles[i].getName();
+            String[] strarr = tmp.split(".txt");
+            items[i] = new MenuItem(strarr[0]);
 
             items[i].setOnAction(new EventHandler<ActionEvent>() {
                 @Override
@@ -178,40 +208,44 @@ public class Zusammenfassung {
                     MenuItem clickedMenuItem = (MenuItem) event.getTarget();
                     String buttonlabel = clickedMenuItem.getText();
 
-                    File f = new File("Themenbereiche");
-                    String[] topicList = f.list();
-
                     String chosenTopic = buttonlabel;
+                    int count = 0;
                     try {
-                        FileHandler fileHandler = new FileHandler(chosenTopic + ".txt");
+                        count = countlines(chosenTopic);
                     } catch (IOException e) {
                         e.printStackTrace();
+                    }
+                    if (count >= 40) {
+
+
+                        Stage stage1 = (Stage) aktuellesthema.getScene().getWindow();
+                        Stage stage2 = new Stage();
+                        FXMLLoader fxmlloader = new FXMLLoader();
+                        stage2.initStyle(StageStyle.UNDECORATED);
+                        Pane root = null;
+                        try {
+                            root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        Scene scene = new Scene(root, 400, 600);
+                        stage2.setScene(scene);
+                        scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
+                        stage2.setResizable(false);
+                        stage2.show();
+                        stage1.close();
+                        Quizlayout controller = fxmlloader.<Quizlayout>getController();
+                        try {
+                            controller.randomizeQuestion(chosenTopic);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }else{
+                        JOptionPane.showMessageDialog(null, "Nicht genügend Fragen");
                     }
 
-                    Stage stage1 = (Stage) aktuellesthema.getScene().getWindow();
-                    Stage stage2 = new Stage();
-                    FXMLLoader fxmlloader = new FXMLLoader();
-                    stage2.initStyle(StageStyle.UNDECORATED);
-                    Pane root = null;
-                    try {
-                        root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    Scene scene = new Scene(root, 400, 600);
-                    stage2.setScene(scene);
-                    scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
-                    stage2.setResizable(false);
-                    stage2.show();
-                    stage1.close();
-                    Quizlayout controller = fxmlloader.<Quizlayout>getController();
-                    try {
-                        controller.randomizeQuestion(chosenTopic);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+
                 }
-
             });
         }
         bufferedReader.close();
@@ -233,6 +267,7 @@ public class Zusammenfassung {
         stage2.setResizable(false);
         stage2.show();
         stage1.close();
+
     }
 
     public void showLabelContext(int richtig, int falsch){
@@ -240,9 +275,9 @@ public class Zusammenfassung {
         wrong.setText(String.valueOf(falsch));
     }
 
-    private int countlines() throws IOException {
-        int count=0;
-        File wrong = new File("Themenbereiche/wrongAnswers.txt");
+    private int countlines(String chosentopic) throws IOException {
+        int count = 0;
+        File wrong = new File("Themenbereiche/" + chosentopic + ".txt");
         BufferedReader in = new BufferedReader(new FileReader(wrong));
         while (in.readLine() != null) {
             ++count;
@@ -250,7 +285,8 @@ public class Zusammenfassung {
         return count;
     }
 
-    private File getLatestFilefromDir() throws IOException {
+
+        private File getLatestFilefromDir() throws IOException {
         File dir = new File("Themenbereiche");
         File[] files=dir.listFiles();
         if(files == null || files.length==0){
