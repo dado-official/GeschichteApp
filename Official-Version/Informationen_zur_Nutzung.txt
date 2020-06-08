@@ -6,6 +6,7 @@ Richtige Antwort
 Falsche Antwort
 Falsche Antwort
 Diesen Aufbau mindestens 10 mal wiederholen, sodass 10 Fragen enthalten sind
+Wichtig: Keine Umlaute oder ß verwenden
 
 
 Bei Problemen an die Softwareentwickler wenden.
