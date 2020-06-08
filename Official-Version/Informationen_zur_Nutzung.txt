@@ -1,0 +1,15 @@
+Kurze Informationen:
+
+Aufbau der Textdatei ist wie folgt:
+Frage
+Richtige Antwort
+Falsche Antwort
+Falsche Antwort
+Diesen Aufbau mindestens 10 mal wiederholen, sodass 10 Fragen enthalten sind
+
+
+Bei Problemen an die Softwareentwickler wenden.
+
+Um Themenbereiche hinzuzufügen oder zu entfernen in den Installationspfad gehen(C:\Program Files (x86)\GeschichteApp).
+Das Themenbereich das hinzugefügt werden soll in den Ordner Themenbereiche geben.
+Beim Entfernen eines Themengebietes, das bestimmte Themengebiet aus dem Ordner Themenbereiche löschen.
