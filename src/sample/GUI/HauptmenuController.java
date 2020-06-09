@@ -288,7 +288,7 @@ public class HauptmenuController {
                 Stage stage1 = (Stage) neu.getScene().getWindow();
                 Stage stage2 = new Stage();
                 stage2.initStyle(StageStyle.UNDECORATED);
-                MenuButton altequiz = new MenuButton("Altes Quiz auswaehlen");
+                MenuButton altequiz = new MenuButton("Altes Quiz auswählen");
                 altequiz.setPrefSize(200, 50);
                 //i = anzahl der Themebereiche
 

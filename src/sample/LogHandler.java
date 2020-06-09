@@ -3,6 +3,7 @@ package sample;
 import javafx.fxml.FXMLLoader;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
@@ -111,25 +112,19 @@ public class LogHandler {
 
     public void writeQuestionAndAnswersToAttempt(Question question, String topic) throws IOException {
         //Frage mit Antworten in File schreiben
-        try {
-            Files.write(Paths.get("Quiz/" + topic + (getAttemptsNumber(topic)-1) + ".txt"),
-                    question.getQuestion().concat("\n")
-                            .concat(question.getAnswers(0).concat("\n")
-                            .concat(question.getAnswers(1).concat("\n")
-                            .concat(question.getAnswers(2)).concat("\n"))).getBytes(), StandardOpenOption.APPEND);
-        }catch (IOException e) {
-            //exception handling left as an exercise for the reader
-            e.printStackTrace();
-        }
+        OutputStreamWriter fw = new OutputStreamWriter(new FileOutputStream(String.valueOf(Paths.get("Quiz/" + topic + (getAttemptsNumber(topic)-1) + ".txt")),true), StandardCharsets.UTF_8.name());
+
+        fw.write(question.getQuestion()+"\n");
+        fw.write(question.getAnswers(0)+"\n");
+        fw.write(question.getAnswers(1)+"\n");
+        fw.write(question.getAnswers(2)+"\n");
+        fw.close();
     }
 
-    public void writeClickedAnswer(String string, String topic){
-        try {
-            Files.write(Paths.get("Quiz/" + topic + (getAttemptsNumber(topic)-1) + ".txt"),
-                    string.concat("\n").getBytes(), StandardOpenOption.APPEND);
-        }catch (IOException e) {
-            //exception handling left as an exercise for the reader
-            e.printStackTrace();
-        }
+    public void writeClickedAnswer(String string, String topic) throws IOException {
+        OutputStreamWriter fw = new OutputStreamWriter(new FileOutputStream(String.valueOf(Paths.get("Quiz/" + topic + (getAttemptsNumber(topic)-1) + ".txt")),true), StandardCharsets.UTF_8.name());
+
+        fw.write(string+"\n");
+        fw.close();
     }
 }

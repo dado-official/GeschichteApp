@@ -2,12 +2,69 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="geschichtequiz2" />
+      <artifact name="geschichtequiz" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Informationen zur Nutzung">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Änderung wegen Umlaute">
+      <change afterPath="$PROJECT_DIR$/Quiz/wrongAnswers2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/GeschichteApp.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/Themenbereiche/1 Weltkrieg 1914.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/Themenbereiche/1 Weltkrieg 1915.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/Themenbereiche/Balkankriege.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/Themenbereiche/Julikrise.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/Themenbereiche/Marokkokrisen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/Themenbereiche/Spanisch-Amerikanischerkrieg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/Themenbereiche/wrongAnswers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Quiz/1 Weltkrieg 19153.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Quiz/1 Weltkrieg 19154.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Quiz/Spanisch-Amerikanischerkrieg1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Quiz/Spanisch-Amerikanischerkrieg2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Quiz/wrongAnswers1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Themenbereiche/1 Weltkrieg 1914.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Themenbereiche/1 Weltkrieg 1915.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Themenbereiche/Balkankriege.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Themenbereiche/Julikrise.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Themenbereiche/Marokkokrisen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Themenbereiche/Spanisch-Amerikanischerkrieg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/Themenbereiche/wrongAnswers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jnlp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Quiz/1 Weltkrieg 19153.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Quiz/1 Weltkrieg 19154.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Quiz/Spanisch-Amerikanischerkrieg1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Quiz/Spanisch-Amerikanischerkrieg2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Quiz/wrongAnswers1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Quiz/wrongAnswers2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Themenbereiche/1 Weltkrieg 1914.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Themenbereiche/1 Weltkrieg 1915.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Themenbereiche/Balkankriege.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Themenbereiche/Julikrise.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Themenbereiche/Marokkokrisen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Themenbereiche/Spanisch-Amerikanischerkrieg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/Themenbereiche/wrongAnswers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/geschichtequiz.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/geschichtequiz.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/log/1 Weltkrieg 19144.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/log/Balkankriege1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/log/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/log/wrongAnswers3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/bin/javafx_font_t2k.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/bin/kcms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/log/1 Weltkrieg 19144.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/log/Balkankriege1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/log/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/log/wrongAnswers3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/geschichtequiz.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/geschichtequiz.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/log/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/META-INF/geschichtequiz.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FileHandlerAlt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FileHandlerAlt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/GUI/Quizlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Quizlayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/LogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LogHandler.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -443,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591599434942</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Änderung wegen Umlaute">
+      <created>1591606275226</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1591606275226</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,6 +554,7 @@
     <MESSAGE value="Vollversion 1.2" />
     <MESSAGE value="Vollversion 1.2 mit Installer" />
     <MESSAGE value="Informationen zur Nutzung" />
-    <option name="LAST_COMMIT_MESSAGE" value="Informationen zur Nutzung" />
+    <MESSAGE value="Änderung wegen Umlaute" />
+    <option name="LAST_COMMIT_MESSAGE" value="Änderung wegen Umlaute" />
   </component>
 </project>

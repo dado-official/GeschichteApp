@@ -4,4 +4,4 @@ Balkankriege;1
 Julikrise;2
 Marokkokrisen;1
 Spanisch-Amerikanischerkrieg;3
-wrongAnswers;2
+wrongAnswers;3

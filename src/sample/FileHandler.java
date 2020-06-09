@@ -1,6 +1,7 @@
 package sample;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 //Klasse zum lesen des Files und erstellen der Fragen mit den dazugehörigen antworten
@@ -21,7 +22,7 @@ public class FileHandler {
 
         //BufferedReader wird erstellt
         try {
-            buf = new BufferedReader(new FileReader(file));
+            buf = new BufferedReader(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8.name()));
         }catch (FileNotFoundException e){
             System.out.println("Error: File not found");
         }

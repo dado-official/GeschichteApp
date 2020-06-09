@@ -15,6 +15,7 @@ import sample.Question;
 
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -40,7 +41,7 @@ public class Quizlayout {
         private int counter = 0;
 
         //ArrayList zum Speichern der bereits angezeigten Fragen
-        private ArrayList<String> duplicate = new ArrayList<>();
+        private ArrayList<Integer> duplicate = new ArrayList<Integer>();
         private Random rand = new Random();
         private FileHandler filehandler;
         int richtig = 0, falsch = 0;
@@ -64,7 +65,7 @@ public class Quizlayout {
                 rand_int1 = rand.nextInt(fileHandler.questions.length);
 
                 //Überprüfen ob die Frage bereits angezeigt wurde
-                while (duplicate.contains(fileHandler.questions[rand_int1].getQuestion())){
+                while (duplicate.contains(rand_int1)){
                         rand_int1 = rand.nextInt(fileHandler.questions.length);
                 }
 
@@ -72,7 +73,7 @@ public class Quizlayout {
                 //Frage anzeigen
                 frage.setText(fileHandler.questions[rand_int1].getQuestion());
                 //Frage zum duplicateArray hinzufügen
-                duplicate.add(fileHandler.questions[rand_int1].getQuestion());
+                duplicate.add(rand_int1);
 
                 //Antworten werden zufällig zugeordnet
                 answer1.setText(fileHandler.questions[rand_int1].getAnswers(rand.nextInt(3)));
@@ -171,7 +172,7 @@ public class Quizlayout {
                 try
                 {
                         String filename= "Themenbereiche/wrongAnswers.txt";
-                        FileWriter fw = new FileWriter(filename,true);
+                        OutputStreamWriter fw = new OutputStreamWriter(new FileOutputStream(filename,true), StandardCharsets.UTF_8.name());
                         fw.write(question.getQuestion()+"\n");
                         fw.write(question.getAnswers(0)+"\n");
                         fw.write(question.getAnswers(1)+"\n");
