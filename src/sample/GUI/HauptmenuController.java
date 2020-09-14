@@ -16,6 +16,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import sample.FileHandlerAlt;
+import sample.LogHandler;
 
 import javax.swing.*;
 import java.io.*;
@@ -43,6 +44,7 @@ public class HauptmenuController {
 
     private  double xOffset = 0;
     private  double yOffset = 0;
+    public static LogHandler logHandler;
 
 
 
@@ -482,14 +484,16 @@ public class HauptmenuController {
                 scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
             }
         }else if(event.getSource()==offnen){
-            java.awt.Desktop.getDesktop().browse(new File("C:\\Program Files (x86)\\GeschichteApp\\Themenbereiche\\").toURI());
+            java.awt.Desktop.getDesktop().browse(new File("Themenbereiche").toURI());
         }else if(event.getSource()==reset){
-            File f = new File("C:\\Program Files(x86)\\GeschichteApp\\Quiz");
+            File f = new File("Quiz");
             deleteDir(f);
-            PrintWriter pw = new PrintWriter("C:\\Program Files (x86)\\GeschichteApp\\Themenbereiche\\wrongAnswers.txt");
+            PrintWriter pw = new PrintWriter("Themenbereiche\\wrongAnswers.txt");
             pw.close();
-            PrintWriter pw2 = new PrintWriter("C:\\Program Files (x86)\\GeschichteApp\\log\\log.txt");
+            PrintWriter pw2 = new PrintWriter("log\\log.txt");
             pw2.close();
+            logHandler = new LogHandler();
+            logHandler.checkForNewFiles();
 
 
 

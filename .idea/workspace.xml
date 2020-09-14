@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="geschichtequiz" />
+      <artifact name="geschichtequiz2" />
     </artifacts-to-build>
   </component>
   <component name="BranchesTreeState">
@@ -24,31 +24,53 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Änderung wegen Umlaute">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Installer für Version 2.0">
+      <change afterPath="$PROJECT_DIR$/GeschichteApp.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/geschichtequiz2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/geschichtequiz2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quiz/wrongAnswers2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quiz/wrongAnswers4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Quiz/wrongAnswers4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Themenbereiche/wrongAnswers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Official-Version/GeschichteAppInstaller.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Official-Version/GeschichteAppInstaller.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quiz/wrongAnswers4.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/hauptmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/hauptmenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/quit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/quit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/quizalt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/quizalt.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/quizlayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/quizlayout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/workinprogress.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/workinprogress.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/zusammenfassung.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geschichtequiz/sample/GUI/zusammenfassung.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz.jnlp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/geschichtequiz.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/app/geschichtequiz.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/COPYRIGHT" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/COPYRIGHT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/THIRDPARTYLICENSEREADME-JAVAFX.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/THIRDPARTYLICENSEREADME-JAVAFX.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/THIRDPARTYLICENSEREADME.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/THIRDPARTYLICENSEREADME.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/Welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/Welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/bin/server/Xusage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/bin/server/Xusage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/bin/server/classes.jsa" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/bin/server/classes.jsa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/accessibility.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/accessibility.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/amd64/jvm.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/amd64/jvm.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/calendars.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/calendars.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/content-types.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/content-types.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/flavormap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/flavormap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/fontconfig.properties.src" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/fontconfig.properties.src" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/hijrah-config-umalqura.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/hijrah-config-umalqura.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/images/cursors/cursors.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/images/cursors/cursors.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/javafx.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/javafx.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/jfr/default.jfc" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/jfr/default.jfc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/jfr/profile.jfc" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/jfr/profile.jfc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/jvm.hprof.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/jvm.hprof.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/management/jmxremote.access" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/management/jmxremote.access" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/management/jmxremote.password.template" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/management/jmxremote.password.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/management/management.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/management/management.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/management/snmp.acl.template" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/management/snmp.acl.template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/net.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/net.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/psfont.properties.ja" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/psfont.properties.ja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/psfontj2d.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/psfontj2d.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/security/blacklist" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/security/blacklist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/security/blacklisted.certs" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/security/blacklisted.certs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/security/java.policy" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/security/java.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/security/javaws.policy" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/security/javaws.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/sound.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/sound.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/tzmappings" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/bundles/geschichtequiz/runtime/lib/tzmappings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/geschichtequiz/geschichtequiz.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/geschichtequiz/geschichtequiz.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/HauptmenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/Quit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Quit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/Quizalt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Quizalt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/Quizlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Quizlayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/Workinprogress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Workinprogress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/Zusammenfassung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/Zusammenfassung.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/hauptmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/hauptmenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/quit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/quit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/quizalt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/quizalt.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/quizlayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/quizlayout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/workinprogress.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/workinprogress.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/GUI/zusammenfassung.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/GUI/zusammenfassung.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +168,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -481,7 +503,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591606275226</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Resetbutton">
+      <created>1600088430350</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1600088430350</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Installer für Version 2.0">
+      <created>1600092195738</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1600092195738</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,8 +539,6 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <MESSAGE value="Hinzufügen der Klasse Question" />
-    <MESSAGE value="Hinzufügen der Klasse FileHandler" />
     <MESSAGE value="In Klasse FileHandler&#10;ersetzen der Klasse main" />
     <MESSAGE value="In Klasse FileHandler:&#10;ersetzen der Klasse main durch init und hinzufügen eines constructors" />
     <MESSAGE value="Änderung bei der Auswahl einem bestimmten Thema" />
@@ -528,32 +562,50 @@
     <MESSAGE value="Vollversion 1.2 mit Installer" />
     <MESSAGE value="Informationen zur Nutzung" />
     <MESSAGE value="Änderung wegen Umlaute" />
-    <option name="LAST_COMMIT_MESSAGE" value="Änderung wegen Umlaute" />
+    <MESSAGE value="Resetbutton" />
+    <MESSAGE value="Installer für Version 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Installer für Version 2.0" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600090242511">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600090242511" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1600074554706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600074554706" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1600088206047">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1600090735414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600088206047" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1600088206046">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600090735414" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1600090735414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600088206046" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1600088206046">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600090735414" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1600090735414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600088206046" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1600088206047">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600090735414" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1600090735414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600088206047" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600090735414" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1600090245809">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600090245809" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600092199069">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600092199069" />
     <state x="666" y="267" key="refactoring.ChangeSignatureDialog" timestamp="1600071554707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="267" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600071554707" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600090896188">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600090896188" />
   </component>
 </project>
