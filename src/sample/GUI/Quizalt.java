@@ -12,7 +12,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import sample.FileHandlerAlt;
 
 import javax.swing.*;
@@ -78,9 +77,7 @@ public class Quizalt {
                 if(listOfFiles == null || listOfFiles.length==0){
                     JOptionPane.showMessageDialog(null,"Noch keine Quiz gemacht");
                 } else {
-                    Stage stage1 = (Stage) weiter.getScene().getWindow();
-                    Stage stage2 = new Stage();
-                    stage2.initStyle(StageStyle.UNDECORATED);
+                    Stage stage = (Stage) weiter.getScene().getWindow();
                     MenuButton altequiz = new MenuButton("Altes Quiz auswaehlen");
                     altequiz.setPrefSize(200, 50);
                     //i = anzahl der Themebereiche
@@ -114,10 +111,8 @@ public class Quizalt {
                                     e.printStackTrace();
                                 }
 
-                                Stage stage1 = (Stage) altequiz.getScene().getWindow();
-                                Stage stage2 = new Stage();
+                                Stage stage = (Stage) altequiz.getScene().getWindow();
                                 FXMLLoader fxmlloader = new FXMLLoader();
-                                stage2.initStyle(StageStyle.UNDECORATED);
                                 Pane root = null;
                                 try {
                                     root = fxmlloader.load(getClass().getResource("quizalt.fxml").openStream());
@@ -125,11 +120,8 @@ public class Quizalt {
                                     e.printStackTrace();
                                 }
                                 Scene scene = new Scene(root, 400, 600);
-                                stage2.setScene(scene);
+                                stage.setScene(scene);
                                 scene.getStylesheets().add(getClass().getResource("quizalt.css").toExternalForm());
-                                stage2.setResizable(false);
-                                stage2.show();
-                                stage1.close();
                                 Quizalt controller = fxmlloader.getController();
                                 try {
                                     controller.showQuestion(chosenTopic);
@@ -147,11 +139,8 @@ public class Quizalt {
                     zuruck.setOnAction(new EventHandler<ActionEvent>() {
                         @Override
                         public void handle(ActionEvent event) {
-                            Stage stage1 = (Stage) zuruck.getScene().getWindow();
-
-                            Stage stage2 = new Stage();
+                            Stage stage = (Stage) zuruck.getScene().getWindow();
                             FXMLLoader fxmlloader = new FXMLLoader();
-                            stage2.initStyle(StageStyle.UNDECORATED);
                             Pane root = null;
                             try {
                                 root = fxmlloader.load(getClass().getResource("hauptmenu.fxml").openStream());
@@ -159,11 +148,9 @@ public class Quizalt {
                                 e.printStackTrace();
                             }
                             Scene scene = new Scene(root, 400, 600);
-                            stage2.setScene(scene);
+                            stage.setScene(scene);
                             scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
-                            stage2.setResizable(false);
-                            stage2.show();
-                            stage1.close();
+
                         }
                     });
                     zuruck.setPrefSize(100, 25);
@@ -174,12 +161,10 @@ public class Quizalt {
                     root.setCenter(tabel);
                     root.setBottom(zuruck);
                     root.setPadding(new Insets(0, 0, 25, 25));
+                    root.autosize();
                     Scene scene = new Scene(root, 400, 600);
-                    stage2.setScene(scene);
+                    stage.setScene(scene);
                     scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
-                    stage2.setResizable(false);
-                    stage2.show();
-                    stage1.hide();
                 }
             } else{
                 counter2--;
@@ -198,9 +183,7 @@ public class Quizalt {
                 if(listOfFiles == null || listOfFiles.length==0){
                     JOptionPane.showMessageDialog(null,"Noch keine Quiz gemacht");
                 } else {
-                    Stage stage1 = (Stage) weiter.getScene().getWindow();
-                    Stage stage2 = new Stage();
-                    stage2.initStyle(StageStyle.UNDECORATED);
+                    Stage stage = (Stage) weiter.getScene().getWindow();
                     MenuButton altequiz = new MenuButton("Altes Quiz auswaehlen");
                     altequiz.setPrefSize(200, 50);
                     //i = anzahl der Themebereiche
@@ -234,10 +217,8 @@ public class Quizalt {
                                     e.printStackTrace();
                                 }
 
-                                Stage stage1 = (Stage) altequiz.getScene().getWindow();
-                                Stage stage2 = new Stage();
+                                Stage stage = (Stage) altequiz.getScene().getWindow();
                                 FXMLLoader fxmlloader = new FXMLLoader();
-                                stage2.initStyle(StageStyle.UNDECORATED);
                                 Pane root = null;
                                 try {
                                     root = fxmlloader.load(getClass().getResource("quizalt.fxml").openStream());
@@ -245,11 +226,8 @@ public class Quizalt {
                                     e.printStackTrace();
                                 }
                                 Scene scene = new Scene(root, 400, 600);
-                                stage2.setScene(scene);
+                                stage.setScene(scene);
                                 scene.getStylesheets().add(getClass().getResource("quizalt.css").toExternalForm());
-                                stage2.setResizable(false);
-                                stage2.show();
-                                stage1.close();
                                 Quizalt controller = fxmlloader.getController();
                                 try {
                                     controller.showQuestion(chosenTopic);
@@ -267,11 +245,8 @@ public class Quizalt {
                     zuruck.setOnAction(new EventHandler<ActionEvent>() {
                         @Override
                         public void handle(ActionEvent event) {
-                            Stage stage1 = (Stage) zuruck.getScene().getWindow();
-
-                            Stage stage2 = new Stage();
+                            Stage stage = (Stage) zuruck.getScene().getWindow();
                             FXMLLoader fxmlloader = new FXMLLoader();
-                            stage2.initStyle(StageStyle.UNDECORATED);
                             Pane root = null;
                             try {
                                 root = fxmlloader.load(getClass().getResource("hauptmenu.fxml").openStream());
@@ -279,11 +254,9 @@ public class Quizalt {
                                 e.printStackTrace();
                             }
                             Scene scene = new Scene(root, 400, 600);
-                            stage2.setScene(scene);
+                            stage.setScene(scene);
                             scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
-                            stage2.setResizable(false);
-                            stage2.show();
-                            stage1.close();
+
                         }
                     });
                     zuruck.setPrefSize(100, 25);
@@ -294,12 +267,10 @@ public class Quizalt {
                     root.setCenter(tabel);
                     root.setBottom(zuruck);
                     root.setPadding(new Insets(0, 0, 25, 25));
+                    root.autosize();
                     Scene scene = new Scene(root, 400, 600);
-                    stage2.setScene(scene);
+                    stage.setScene(scene);
                     scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
-                    stage2.setResizable(false);
-                    stage2.show();
-                    stage1.hide();
                 }
             } else {
                 resettextfields();

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-<?import java.net.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.GUI.HauptmenuController">
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GUI.HauptmenuController">
   <children>
     <BorderPane layoutX="-100.0" layoutY="100.0" prefHeight="400.0" prefWidth="600.0">
       <center>
-        <GridPane alignment="CENTER" maxHeight="300.0" maxWidth="200.0" prefHeight="200.0" prefWidth="300.0">
+        <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="300.0">
           <children>
             <Button fx:id="neu" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="600.0" text="Neues Quiz" GridPane.columnIndex="0" GridPane.rowIndex="0" />
             <Button fx:id="alt" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="600.0" text="Alte Quiz" GridPane.columnIndex="0" GridPane.rowIndex="1" />
@@ -30,11 +28,12 @@
       <menus>
         <Menu mnemonicParsing="false" text="?">
           <items>
-            <MenuItem mnemonicParsing="false" text="Infos" onAction="#menuClickHandler"/>
+            <MenuItem mnemonicParsing="false" onAction="#menuClickHandler" text="Infos" />
           </items>
         </Menu>
       </menus>
     </MenuBar>
+      <Button fx:id="offnen" contentDisplay="CENTER" layoutX="125.0" layoutY="500.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="150.0" style="-fx-font-size: 16;" text="Ordner öffnen" />
   </children>
   <stylesheets>
   </stylesheets>

@@ -14,8 +14,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import sample.FileHandler;
 import sample.FileHandlerAlt;
 
 import javax.swing.*;
@@ -36,33 +34,30 @@ public class HauptmenuController {
     @FXML
     private Button neu;
 
+    @FXML
+    private Button offnen;
+
+
 
     @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {
         if (event.getSource() == close) {
-            Stage stage1 = (Stage) neu.getScene().getWindow();
+            Stage stage = (Stage) neu.getScene().getWindow();
 
-            Stage stage2 = new Stage();
             FXMLLoader fxmlloader = new FXMLLoader();
-            stage2.initStyle(StageStyle.UNDECORATED);
             Pane root = fxmlloader.load(getClass().getResource("quit.fxml").openStream());
             Scene scene = new Scene(root, 400, 600);
-            stage2.setScene(scene);
+            stage.setScene(scene);
             scene.getStylesheets().add(getClass().getResource("stylequit.css").toExternalForm());
-            stage2.setResizable(false);
-            stage2.show();
-            stage1.close();
         } else if (event.getSource() == neu) {
             File folder = new File("Themenbereiche");
             listOfFiles = folder.listFiles();
 
             assert listOfFiles != null;
             System.out.println(Arrays.toString(listOfFiles));
-            Stage stage1 = (Stage) neu.getScene().getWindow();
+            Stage stage = (Stage) neu.getScene().getWindow();
             MenuItem[] items = new MenuItem[listOfFiles.length];
 
-            Stage stage2 = new Stage();
-            stage2.initStyle(StageStyle.UNDECORATED);
             Button aktuellesthema = new Button("Aktuelles Thema");
             aktuellesthema.setPrefSize(200,50);
             aktuellesthema.setOnAction(new EventHandler<ActionEvent>() {
@@ -88,11 +83,8 @@ public class HauptmenuController {
                     }
 
                     if(count>=40){
-                        Stage stage1 = (Stage) aktuellesthema.getScene().getWindow();
-
-                        Stage stage2 = new Stage();
+                        Stage stage = (Stage) aktuellesthema.getScene().getWindow();
                         FXMLLoader fxmlloader = new FXMLLoader();
-                        stage2.initStyle(StageStyle.UNDECORATED);
                         Pane root = null;
                         try {
                             root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
@@ -100,11 +92,8 @@ public class HauptmenuController {
                             e.printStackTrace();
                         }
                         Scene scene = new Scene(root, 400, 600);
-                        stage2.setScene(scene);
+                        stage.setScene(scene);
                         scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
-                        stage2.setResizable(false);
-                        stage2.show();
-                        stage1.close();
                         Quizlayout controller = fxmlloader.<Quizlayout>getController();
                         tmp = null;
                         try {
@@ -146,11 +135,8 @@ public class HauptmenuController {
                         e.printStackTrace();
                     }
                     if(count>=40){
-                        Stage stage1 = (Stage) fehler.getScene().getWindow();
-
-                        Stage stage2 = new Stage();
+                        Stage stage = (Stage) fehler.getScene().getWindow();
                         FXMLLoader fxmlloader = new FXMLLoader();
-                        stage2.initStyle(StageStyle.UNDECORATED);
                         Pane root = null;
                         try {
                             root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
@@ -158,11 +144,8 @@ public class HauptmenuController {
                             e.printStackTrace();
                         }
                         Scene scene = new Scene(root, 400, 600);
-                        stage2.setScene(scene);
+                        stage.setScene(scene);
                         scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
-                        stage2.setResizable(false);
-                        stage2.show();
-                        stage1.close();
                         Quizlayout controller = fxmlloader.<Quizlayout>getController();
                         try {
                             controller.randomizeQuestion("wrongAnswers");
@@ -181,11 +164,10 @@ public class HauptmenuController {
             zuruck.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
-                    Stage stage1 = (Stage) zuruck.getScene().getWindow();
+                    Stage stage = (Stage) zuruck.getScene().getWindow();
 
-                    Stage stage2 = new Stage();
                     FXMLLoader fxmlloader = new FXMLLoader();
-                    stage2.initStyle(StageStyle.UNDECORATED);
+
                     Pane root = null;
                     try {
                         root = fxmlloader.load(getClass().getResource("hauptmenu.fxml").openStream());
@@ -193,11 +175,8 @@ public class HauptmenuController {
                         e.printStackTrace();
                     }
                     Scene scene = new Scene(root, 400, 600);
-                    stage2.setScene(scene);
+                    stage.setScene(scene);
                     scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
-                    stage2.setResizable(false);
-                    stage2.show();
-                    stage1.close();
                 }
             });
             MenuButton bestthema = new MenuButton("Quiz zu bestimmten Thema");
@@ -229,10 +208,8 @@ public class HauptmenuController {
                         if (count >= 40) {
 
 
-                            Stage stage1 = (Stage) aktuellesthema.getScene().getWindow();
-                            Stage stage2 = new Stage();
+                            Stage stage = (Stage) aktuellesthema.getScene().getWindow();
                             FXMLLoader fxmlloader = new FXMLLoader();
-                            stage2.initStyle(StageStyle.UNDECORATED);
                             Pane root = null;
                             try {
                                 root = fxmlloader.load(getClass().getResource("quizlayout.fxml").openStream());
@@ -240,11 +217,8 @@ public class HauptmenuController {
                                 e.printStackTrace();
                             }
                             Scene scene = new Scene(root, 400, 600);
-                            stage2.setScene(scene);
+                            stage.setScene(scene);
                             scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
-                            stage2.setResizable(false);
-                            stage2.show();
-                            stage1.close();
                             Quizlayout controller = fxmlloader.<Quizlayout>getController();
                             try {
                                 controller.randomizeQuestion(chosenTopic);
@@ -268,16 +242,15 @@ public class HauptmenuController {
             tabelle.add(fehler, 0,1);
             tabelle.add(bestthema, 0,2);
             tabelle.setAlignment(Pos.CENTER);
+            tabelle.autosize();
             BorderPane root =new BorderPane();
             root.setPadding(new Insets(0,0,25,25));
             root.setBottom(zuruck);
             root.setCenter(tabelle);
+            root.autosize();
             Scene scene = new Scene(root, 400, 600);
-            stage2.setScene(scene);
+            stage.setScene(scene);
             scene.getStylesheets().add(getClass().getResource("style2.css").toExternalForm());
-            stage2.setResizable(false);
-            stage2.show();
-            stage1.close();
 
         } else if(event.getSource() == alt){
             File folder = new File("Quiz");
@@ -285,9 +258,7 @@ public class HauptmenuController {
             if(listOfFiles == null || listOfFiles.length==0){
                 JOptionPane.showMessageDialog(null,"Noch keine Quiz gemacht");
             } else {
-                Stage stage1 = (Stage) neu.getScene().getWindow();
-                Stage stage2 = new Stage();
-                stage2.initStyle(StageStyle.UNDECORATED);
+                Stage stage = (Stage) neu.getScene().getWindow();
                 MenuButton altequiz = new MenuButton("Altes Quiz auswählen");
                 altequiz.setPrefSize(200, 50);
                 //i = anzahl der Themebereiche
@@ -321,10 +292,8 @@ public class HauptmenuController {
                                 e.printStackTrace();
                             }
 
-                            Stage stage1 = (Stage) altequiz.getScene().getWindow();
-                            Stage stage2 = new Stage();
+                            Stage stage = (Stage) altequiz.getScene().getWindow();
                             FXMLLoader fxmlloader = new FXMLLoader();
-                            stage2.initStyle(StageStyle.UNDECORATED);
                             Pane root = null;
                             try {
                                 root = fxmlloader.load(getClass().getResource("quizalt.fxml").openStream());
@@ -332,11 +301,8 @@ public class HauptmenuController {
                                 e.printStackTrace();
                             }
                             Scene scene = new Scene(root, 400, 600);
-                            stage2.setScene(scene);
+                            stage.setScene(scene);
                             scene.getStylesheets().add(getClass().getResource("quizalt.css").toExternalForm());
-                            stage2.setResizable(false);
-                            stage2.show();
-                            stage1.close();
                             Quizalt controller = fxmlloader.getController();
                             try {
                                 controller.showQuestion(chosenTopic);
@@ -354,11 +320,11 @@ public class HauptmenuController {
                 zuruck.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
-                        Stage stage1 = (Stage) zuruck.getScene().getWindow();
+                        Stage stage = (Stage) zuruck.getScene().getWindow();
 
-                        Stage stage2 = new Stage();
+
                         FXMLLoader fxmlloader = new FXMLLoader();
-                        stage2.initStyle(StageStyle.UNDECORATED);
+
                         Pane root = null;
                         try {
                             root = fxmlloader.load(getClass().getResource("hauptmenu.fxml").openStream());
@@ -366,11 +332,9 @@ public class HauptmenuController {
                             e.printStackTrace();
                         }
                         Scene scene = new Scene(root, 400, 600);
-                        stage2.setScene(scene);
+                        stage.setScene(scene);
                         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
-                        stage2.setResizable(false);
-                        stage2.show();
-                        stage1.close();
+
                     }
                 });
                 zuruck.setPrefSize(100, 25);
@@ -381,13 +345,13 @@ public class HauptmenuController {
                 root.setCenter(tabel);
                 root.setBottom(zuruck);
                 root.setPadding(new Insets(0, 0, 25, 25));
+                root.autosize();
                 Scene scene = new Scene(root, 400, 600);
-                stage2.setScene(scene);
+                stage.setScene(scene);
                 scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
-                stage2.setResizable(false);
-                stage2.show();
-                stage1.hide();
             }
+        }else if(event.getSource()==offnen){
+            java.awt.Desktop.getDesktop().browse(new File("C:\\Program Files (x86)\\GeschichteApp\\Themenbereiche\\").toURI());
         }
     }
 

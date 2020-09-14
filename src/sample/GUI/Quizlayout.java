@@ -8,7 +8,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import sample.FileHandler;
 import sample.Main;
 import sample.Question;
@@ -111,20 +110,14 @@ public class Quizlayout {
                 } else if(actionEvent.getSource()==next){
                         ++counter;
                         if (counter == 10){
-                                Stage stage1 = (Stage) frage.getScene().getWindow();
-
-                                Stage stage2 = new Stage();
+                                Stage stage = (Stage) frage.getScene().getWindow();
                                 FXMLLoader fxmlloader = new FXMLLoader();
-                                stage2.initStyle(StageStyle.UNDECORATED);
                                 Pane root = fxmlloader.load(getClass().getResource("zusammenfassung.fxml").openStream());
                                 Scene scene = new Scene(root, 400, 600);
-                                stage2.setScene(scene);
+                                stage.setScene(scene);
                                 scene.getStylesheets().add(getClass().getResource("zusammenfassung.css").toExternalForm());
-                                stage2.setResizable(false);
                                 Zusammenfassung controller = fxmlloader.getController();
                                 controller.showLabelContext(richtig, falsch);
-                                stage2.show();
-                                stage1.close();
                         } else {
                                 randomizeQuestion(topic);
                                 resetbuttons();
