@@ -8,6 +8,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -41,6 +42,8 @@ public class Quizalt {
     private int counter;
     private int counter2=0;
     private String topic;
+    private double xOffset = 0;
+    private double yOffset = 0;
 
     //ArrayList zum Speichern der bereits angezeigten Fragen
 
@@ -120,6 +123,20 @@ public class Quizalt {
                                     e.printStackTrace();
                                 }
                                 Scene scene = new Scene(root, 400, 600);
+                                root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                                    @Override
+                                    public void handle(MouseEvent event) {
+                                        xOffset = event.getSceneX();
+                                        yOffset = event.getSceneY();
+                                    }
+                                });
+                                root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                                    @Override
+                                    public void handle(MouseEvent event) {
+                                        stage.setX(event.getScreenX() - xOffset);
+                                        stage.setY(event.getScreenY() - yOffset);
+                                    }
+                                });
                                 stage.setScene(scene);
                                 scene.getStylesheets().add(getClass().getResource("quizalt.css").toExternalForm());
                                 Quizalt controller = fxmlloader.getController();
@@ -148,6 +165,20 @@ public class Quizalt {
                                 e.printStackTrace();
                             }
                             Scene scene = new Scene(root, 400, 600);
+                            root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                                @Override
+                                public void handle(MouseEvent event) {
+                                    xOffset = event.getSceneX();
+                                    yOffset = event.getSceneY();
+                                }
+                            });
+                            root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                                @Override
+                                public void handle(MouseEvent event) {
+                                    stage.setX(event.getScreenX() - xOffset);
+                                    stage.setY(event.getScreenY() - yOffset);
+                                }
+                            });
                             stage.setScene(scene);
                             scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 
@@ -163,6 +194,20 @@ public class Quizalt {
                     root.setPadding(new Insets(0, 0, 25, 25));
                     root.autosize();
                     Scene scene = new Scene(root, 400, 600);
+                    root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            xOffset = event.getSceneX();
+                            yOffset = event.getSceneY();
+                        }
+                    });
+                    root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            stage.setX(event.getScreenX() - xOffset);
+                            stage.setY(event.getScreenY() - yOffset);
+                        }
+                    });
                     stage.setScene(scene);
                     scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
                 }
@@ -226,6 +271,20 @@ public class Quizalt {
                                     e.printStackTrace();
                                 }
                                 Scene scene = new Scene(root, 400, 600);
+                                root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                                    @Override
+                                    public void handle(MouseEvent event) {
+                                        xOffset = event.getSceneX();
+                                        yOffset = event.getSceneY();
+                                    }
+                                });
+                                root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                                    @Override
+                                    public void handle(MouseEvent event) {
+                                        stage.setX(event.getScreenX() - xOffset);
+                                        stage.setY(event.getScreenY() - yOffset);
+                                    }
+                                });
                                 stage.setScene(scene);
                                 scene.getStylesheets().add(getClass().getResource("quizalt.css").toExternalForm());
                                 Quizalt controller = fxmlloader.getController();
@@ -254,6 +313,20 @@ public class Quizalt {
                                 e.printStackTrace();
                             }
                             Scene scene = new Scene(root, 400, 600);
+                            root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                                @Override
+                                public void handle(MouseEvent event) {
+                                    xOffset = event.getSceneX();
+                                    yOffset = event.getSceneY();
+                                }
+                            });
+                            root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                                @Override
+                                public void handle(MouseEvent event) {
+                                    stage.setX(event.getScreenX() - xOffset);
+                                    stage.setY(event.getScreenY() - yOffset);
+                                }
+                            });
                             stage.setScene(scene);
                             scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 
@@ -269,6 +342,20 @@ public class Quizalt {
                     root.setPadding(new Insets(0, 0, 25, 25));
                     root.autosize();
                     Scene scene = new Scene(root, 400, 600);
+                    root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            xOffset = event.getSceneX();
+                            yOffset = event.getSceneY();
+                        }
+                    });
+                    root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            stage.setX(event.getScreenX() - xOffset);
+                            stage.setY(event.getScreenY() - yOffset);
+                        }
+                    });
                     stage.setScene(scene);
                     scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
                 }

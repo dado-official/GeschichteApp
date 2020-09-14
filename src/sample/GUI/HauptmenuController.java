@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -21,6 +22,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class HauptmenuController {
@@ -36,6 +38,11 @@ public class HauptmenuController {
 
     @FXML
     private Button offnen;
+    @FXML
+    private Button reset;
+
+    private  double xOffset = 0;
+    private  double yOffset = 0;
 
 
 
@@ -47,6 +54,20 @@ public class HauptmenuController {
             FXMLLoader fxmlloader = new FXMLLoader();
             Pane root = fxmlloader.load(getClass().getResource("quit.fxml").openStream());
             Scene scene = new Scene(root, 400, 600);
+            root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    xOffset = event.getSceneX();
+                    yOffset = event.getSceneY();
+                }
+            });
+            root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    stage.setX(event.getScreenX() - xOffset);
+                    stage.setY(event.getScreenY() - yOffset);
+                }
+            });
             stage.setScene(scene);
             scene.getStylesheets().add(getClass().getResource("stylequit.css").toExternalForm());
         } else if (event.getSource() == neu) {
@@ -92,6 +113,20 @@ public class HauptmenuController {
                             e.printStackTrace();
                         }
                         Scene scene = new Scene(root, 400, 600);
+                        root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                            @Override
+                            public void handle(MouseEvent event) {
+                                xOffset = event.getSceneX();
+                                yOffset = event.getSceneY();
+                            }
+                        });
+                        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                            @Override
+                            public void handle(MouseEvent event) {
+                                stage.setX(event.getScreenX() - xOffset);
+                                stage.setY(event.getScreenY() - yOffset);
+                            }
+                        });
                         stage.setScene(scene);
                         scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
                         Quizlayout controller = fxmlloader.<Quizlayout>getController();
@@ -144,6 +179,20 @@ public class HauptmenuController {
                             e.printStackTrace();
                         }
                         Scene scene = new Scene(root, 400, 600);
+                        root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                            @Override
+                            public void handle(MouseEvent event) {
+                                xOffset = event.getSceneX();
+                                yOffset = event.getSceneY();
+                            }
+                        });
+                        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                            @Override
+                            public void handle(MouseEvent event) {
+                                stage.setX(event.getScreenX() - xOffset);
+                                stage.setY(event.getScreenY() - yOffset);
+                            }
+                        });
                         stage.setScene(scene);
                         scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
                         Quizlayout controller = fxmlloader.<Quizlayout>getController();
@@ -175,6 +224,20 @@ public class HauptmenuController {
                         e.printStackTrace();
                     }
                     Scene scene = new Scene(root, 400, 600);
+                    root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            xOffset = event.getSceneX();
+                            yOffset = event.getSceneY();
+                        }
+                    });
+                    root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            stage.setX(event.getScreenX() - xOffset);
+                            stage.setY(event.getScreenY() - yOffset);
+                        }
+                    });
                     stage.setScene(scene);
                     scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
                 }
@@ -217,6 +280,20 @@ public class HauptmenuController {
                                 e.printStackTrace();
                             }
                             Scene scene = new Scene(root, 400, 600);
+                            root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                                @Override
+                                public void handle(MouseEvent event) {
+                                    xOffset = event.getSceneX();
+                                    yOffset = event.getSceneY();
+                                }
+                            });
+                            root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                                @Override
+                                public void handle(MouseEvent event) {
+                                    stage.setX(event.getScreenX() - xOffset);
+                                    stage.setY(event.getScreenY() - yOffset);
+                                }
+                            });
                             stage.setScene(scene);
                             scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
                             Quizlayout controller = fxmlloader.<Quizlayout>getController();
@@ -247,7 +324,20 @@ public class HauptmenuController {
             root.setPadding(new Insets(0,0,25,25));
             root.setBottom(zuruck);
             root.setCenter(tabelle);
-            root.autosize();
+            root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    xOffset = event.getSceneX();
+                    yOffset = event.getSceneY();
+                }
+            });
+            root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    stage.setX(event.getScreenX() - xOffset);
+                    stage.setY(event.getScreenY() - yOffset);
+                }
+            });
             Scene scene = new Scene(root, 400, 600);
             stage.setScene(scene);
             scene.getStylesheets().add(getClass().getResource("style2.css").toExternalForm());
@@ -301,6 +391,20 @@ public class HauptmenuController {
                                 e.printStackTrace();
                             }
                             Scene scene = new Scene(root, 400, 600);
+                            root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                                @Override
+                                public void handle(MouseEvent event) {
+                                    xOffset = event.getSceneX();
+                                    yOffset = event.getSceneY();
+                                }
+                            });
+                            root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                                @Override
+                                public void handle(MouseEvent event) {
+                                    stage.setX(event.getScreenX() - xOffset);
+                                    stage.setY(event.getScreenY() - yOffset);
+                                }
+                            });
                             stage.setScene(scene);
                             scene.getStylesheets().add(getClass().getResource("quizalt.css").toExternalForm());
                             Quizalt controller = fxmlloader.getController();
@@ -332,6 +436,20 @@ public class HauptmenuController {
                             e.printStackTrace();
                         }
                         Scene scene = new Scene(root, 400, 600);
+                        root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                            @Override
+                            public void handle(MouseEvent event) {
+                                xOffset = event.getSceneX();
+                                yOffset = event.getSceneY();
+                            }
+                        });
+                        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                            @Override
+                            public void handle(MouseEvent event) {
+                                stage.setX(event.getScreenX() - xOffset);
+                                stage.setY(event.getScreenY() - yOffset);
+                            }
+                        });
                         stage.setScene(scene);
                         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 
@@ -345,13 +463,36 @@ public class HauptmenuController {
                 root.setCenter(tabel);
                 root.setBottom(zuruck);
                 root.setPadding(new Insets(0, 0, 25, 25));
-                root.autosize();
+                root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                        xOffset = event.getSceneX();
+                        yOffset = event.getSceneY();
+                    }
+                });
+                root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                        stage.setX(event.getScreenX() - xOffset);
+                        stage.setY(event.getScreenY() - yOffset);
+                    }
+                });
                 Scene scene = new Scene(root, 400, 600);
                 stage.setScene(scene);
                 scene.getStylesheets().add(getClass().getResource("style3.css").toExternalForm());
             }
         }else if(event.getSource()==offnen){
             java.awt.Desktop.getDesktop().browse(new File("C:\\Program Files (x86)\\GeschichteApp\\Themenbereiche\\").toURI());
+        }else if(event.getSource()==reset){
+            File f = new File("C:\\Program Files(x86)\\GeschichteApp\\Quiz");
+            deleteDir(f);
+            PrintWriter pw = new PrintWriter("C:\\Program Files (x86)\\GeschichteApp\\Themenbereiche\\wrongAnswers.txt");
+            pw.close();
+            PrintWriter pw2 = new PrintWriter("C:\\Program Files (x86)\\GeschichteApp\\log\\log.txt");
+            pw2.close();
+
+
+
         }
     }
 
@@ -394,5 +535,19 @@ public class HauptmenuController {
             ++count;
         }
         return count;
+    }
+    public static void deleteDir(File dir) {
+
+        File[] files = dir.listFiles();
+        if (files != null) {
+            for (int i = 0; i < files.length; i++) {
+                if (files[i].isDirectory()) {
+                    deleteDir(files[i]);
+                }
+                else {
+                    files[i].delete();
+                }
+            }
+        }
     }
 }

@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -36,7 +37,8 @@ public class Zusammenfassung {
 
     @FXML
     private Label wrong;
-
+    private double xOffset = 0;
+    private double yOffset = 0;
 
     @FXML
     void handleButtonAction(ActionEvent event) throws IOException {
@@ -82,6 +84,20 @@ public class Zusammenfassung {
                         e.printStackTrace();
                     }
                     Scene scene = new Scene(root, 400, 600);
+                    root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            xOffset = event.getSceneX();
+                            yOffset = event.getSceneY();
+                        }
+                    });
+                    root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            stage.setX(event.getScreenX() - xOffset);
+                            stage.setY(event.getScreenY() - yOffset);
+                        }
+                    });
                     stage.setScene(scene);
                     scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
                     Quizlayout controller = fxmlloader.<Quizlayout>getController();
@@ -134,6 +150,20 @@ public class Zusammenfassung {
                         e.printStackTrace();
                     }
                     Scene scene = new Scene(root, 400, 600);
+                    root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            xOffset = event.getSceneX();
+                            yOffset = event.getSceneY();
+                        }
+                    });
+                    root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                        @Override
+                        public void handle(MouseEvent event) {
+                            stage.setX(event.getScreenX() - xOffset);
+                            stage.setY(event.getScreenY() - yOffset);
+                        }
+                    });
                     stage.setScene(scene);
                     scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
                     Quizlayout controller = fxmlloader.<Quizlayout>getController();
@@ -163,6 +193,20 @@ public class Zusammenfassung {
                     e.printStackTrace();
                 }
                 Scene scene = new Scene(root, 400, 600);
+                root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                        xOffset = event.getSceneX();
+                        yOffset = event.getSceneY();
+                    }
+                });
+                root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                        stage.setX(event.getScreenX() - xOffset);
+                        stage.setY(event.getScreenY() - yOffset);
+                    }
+                });
                 stage.setScene(scene);
                 scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
             }
@@ -206,6 +250,20 @@ public class Zusammenfassung {
                             e.printStackTrace();
                         }
                         Scene scene = new Scene(root, 400, 600);
+                        root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                            @Override
+                            public void handle(MouseEvent event) {
+                                xOffset = event.getSceneX();
+                                yOffset = event.getSceneY();
+                            }
+                        });
+                        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                            @Override
+                            public void handle(MouseEvent event) {
+                                stage.setX(event.getScreenX() - xOffset);
+                                stage.setY(event.getScreenY() - yOffset);
+                            }
+                        });
                         stage.setScene(scene);
                         scene.getStylesheets().add(getClass().getResource("quizstyle.css").toExternalForm());
                         Quizlayout controller = fxmlloader.<Quizlayout>getController();
@@ -237,6 +295,20 @@ public class Zusammenfassung {
         root.setCenter(tabelle);
         root.autosize();
         Scene scene = new Scene(root, 400, 600);
+        root.setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                xOffset = event.getSceneX();
+                yOffset = event.getSceneY();
+            }
+        });
+        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                stage.setX(event.getScreenX() - xOffset);
+                stage.setY(event.getScreenY() - yOffset);
+            }
+        });
         stage.setScene(scene);
         scene.getStylesheets().add(getClass().getResource("style2.css").toExternalForm());
     }
